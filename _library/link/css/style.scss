@@ -707,12 +707,17 @@ p.label {}
 		overflow:auto;
 		margin-top:24px;
 		margin-bottom:24px;
-		.line_above {
+		.above_below {
 			display:block;
+			background-image:url(_library/asset/gfx_diagonal.png);
+			background-repeat:no-repeat;
+			background-position:center;
 			width:4px;
-			height:58px;
 			margin:0 auto;
-			background:$color_brand_secondary;
+			}
+		.line_above {
+			@extend .above_below;
+			height:58px;
 			}
 		.gfx_recent {
 			display:block;
@@ -725,11 +730,8 @@ p.label {}
 			margin-bottom:10px;
 			}
 		.line_below {
-			display:block;
-			width:4px;
+			@extend .above_below;
 			height:63px;
-			margin:0 auto;
-			background:$color_brand_secondary;
 			}
 		}
 	}

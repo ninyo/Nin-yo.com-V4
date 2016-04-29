@@ -703,12 +703,15 @@ p {
     overflow: auto;
     margin-top: 24px;
     margin-bottom: 24px; }
-    .section_divide .container_line_recent .line_above {
+    .section_divide .container_line_recent .above_below, .section_divide .container_line_recent .line_above, .section_divide .container_line_recent .line_below {
       display: block;
+      background-image: url(_library/asset/gfx_diagonal.png);
+      background-repeat: no-repeat;
+      background-position: center;
       width: 4px;
-      height: 58px;
-      margin: 0 auto;
-      background: #b08838; }
+      margin: 0 auto; }
+    .section_divide .container_line_recent .line_above {
+      height: 58px; }
     .section_divide .container_line_recent .gfx_recent {
       display: block;
       background-image: url(_library/asset/gfx_divide.svg);
@@ -720,11 +723,7 @@ p {
       margin-top: 10px;
       margin-bottom: 10px; }
     .section_divide .container_line_recent .line_below {
-      display: block;
-      width: 4px;
-      height: 63px;
-      margin: 0 auto;
-      background: #b08838; }
+      height: 63px; }
 
 /* ————–––––———————— CSS MAIN —–––––——————————— */
 .header_main .container {
