@@ -6,7 +6,7 @@
 $color_ninyo: #2d9ad2;
 
 /*—————*///BRAND COLORS
-$color_brand_primary: #d6b52c;
+$color_brand_primary: #49afc6;
 $color_brand_secondary: #b08838;
 
 /*—————*///VALUE COLORS
@@ -16,6 +16,7 @@ $color_shade: #2b2727;
 $color_white: #FFF;
 $color_black: #161a1d;
 $color_darkwhite: #edeae3;
+$color_offwhite: #fafafa;
 
 /*—————*///TYPOGRAPHY COLORS
 $color_h1_onlight: $color_shade;
@@ -51,18 +52,18 @@ $color_copyright: $color_brand_primary;
 //////////////////////////////////////////////////
 
 $tablet_body: 760px;
-$desktop_body: 1080px;
+$laptop_body: 1080px;
+$desktop_body: 1440px;
 
 @mixin section { // section wrap the full width of viewport
 	width:100%;
 	padding-top:50px;
 	padding-bottom:68px;
-	background-color:$color_ghost;
 	@media screen and (min-width: $tablet_body) {
 		padding-top:56px;
 		padding-bottom:78px;
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 		padding-top:60px;
 		padding-bottom:100px;
 		}
@@ -74,14 +75,15 @@ $desktop_body: 1080px;
 	width:93.066666666667%; // 375px viewport width using 345px body using 15px left & right margins
 	text-align:center;
 	@media screen and (min-width: $tablet_body) {width:84.473684210526%;} // 760px viewport width using 642px body using 59px left & right margins
-	@media screen and (min-width: $desktop_body) {width:83.333333333333%;} // 1440px viewport width using 1200px body using 120px left & right margins
+	@media screen and (min-width: $laptop_body) {width:83.333333333333%;} // 1440px viewport width using 1200px body using 120px left & right margins
+	@media screen and (min-width: $desktop_body) {width:1440px;}
 	}.inner {@include inner;}
 
 @mixin inner_block { // inner_block is used to make small amount of text create more lines than one
 	margin:0 auto;
 	width:93.066666666667%; // 375px viewport width using 345px body using 15px left & right margins
 	@media screen and (min-width: $tablet_body) {width:75%;} // 760px viewport width using 642px body using 59px left & right margins
-	@media screen and (min-width: $desktop_body) {width:60%;} // 1440px viewport width using 1200px body using 120px left & right margins
+	@media screen and (min-width: $laptop_body) {width:60%;} // 1440px viewport width using 1200px body using 120px left & right margins
 	}
 .inner_block {@include inner_block;}
 
@@ -98,7 +100,6 @@ $desktop_body: 1080px;
 	text-align:center;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-image:url(_library/asset/img_header.png);
 	background-position:center;
 	height:100vh;
 	@include vertical_center;
@@ -112,7 +113,7 @@ $desktop_body: 1080px;
 	text-align:center;
 	@include vertical_center;
 	@media screen and (min-width: $tablet_body) {height:200px;}
-	@media screen and (min-width: $desktop_body) {height:260px;}
+	@media screen and (min-width: $laptop_body) {height:260px;}
 	}
 
 .header_short {@include header_short}
@@ -120,13 +121,13 @@ $desktop_body: 1080px;
 .text_appear { // if mobile, then text is hidden. text will appear on tablet, and desktop
 	display:none;
 	@media screen and (min-width: $tablet_body) {display:inline-block;}
-	@media screen and (min-width: $desktop_body) {display:inline-block;}
+	@media screen and (min-width: $laptop_body) {display:inline-block;}
 	}
 
 p.bottom {
 	margin-bottom:40px;
 	@media screen and (min-width: $tablet_body) {margin-bottom:40px;}
-	@media screen and (min-width: $desktop_body) {margin-bottom:40px;}
+	@media screen and (min-width: $laptop_body) {margin-bottom:40px;}
 	}
 
 .group_center {
@@ -153,7 +154,7 @@ p.bottom {
     	margin-bottom:3px;
 		&:last-child {margin-right:0;}
 	    @media screen and (min-width: $tablet_body) {}
-		@media screen and (min-width: $desktop_body) {display:inline-block;margin-right:20px;}
+		@media screen and (min-width: $laptop_body) {display:inline-block;margin-right:20px;}
 		}
 	}
 
@@ -173,34 +174,47 @@ p.bottom {
 	}
 @mixin mobile_2 { // body width = 345px, column width = 171, space = 3px
 	height:150px;
-	width:49.565217391304%;
+	width:50%;
+	}
+@mixin mobile_3 { // body width = 345px, column width = 171, space = 3px
+	height:123px;
+	width:33.33333333333333%;
 	}
 @mixin mobile_space { // space = 3px
-	margin-right:0.869565217391%;
+	margin-right:0;
 	}
 /*-----*/	
 @mixin tablet_2 { // body width = 642px, column width = 319px, space = 4px
 	height:210px;
-	width:49.688473520249%;
+	width:50%;
 	}
 @mixin tablet_3 { // body width = 642px, column width = 396.667px, space = 4px
-	height:190px;
-	width:32.917912772586%;
+	height:203px;
+	width:33.33333333333333%;
 	}
 @mixin tablet_space { // space = 4px
-	margin-right:0.623052959502%;
+	margin-right:0%;
 	}
 /*-----*/
-@mixin desktop_2 { // body width = 1200px, column width = 597.5px, space = 5px
+@mixin laptop_2 { // body width = 1200px, column width = 597.5px, space = 5px
 	height:373px;
-	width:49.791666666667%;
+	width:50%;
 	}
-@mixin desktop_3 { // body width = 1200px, column width = 393.333px, space = 5px 
+@mixin laptop_3 { // body width = 1200px, column width = 393.333px, space = 5px 
 	height:273px;
-	width:33.055583333333%;
+	width:33.33333333333333%;
 	}
-@mixin desktop_space { // space = 5px
-	margin-right:0.416666666667%;
+@mixin laptop_4 { // body width = 1200px, column width = 393.333px, space = 5px 
+	height:260px;
+	width:25%;
+	}
+@mixin laptop_space { // space = 5px
+	margin-right:0%;
+	}
+/*-----*/
+@mixin desktop_4 { // body width = 1200px, column width = 393.333px, space = 5px 
+	height:350px;
+	width:25%;
 	}
 
 @mixin grid { // this will be added to all list-item grids
@@ -208,22 +222,14 @@ p.bottom {
 	li {
 		//$mobile_body below
 		@include vp('transition','.25s');
-		@include vp('border-radius', '2px');
 		background:white; 
-		float:left;
-		margin-bottom:3px;
+		float:left !important;
 		background-size:cover;
 		background-position:center;
 		background-repeat:no-repeat;
 
-		@media screen and (min-width: $tablet_body) {
-			margin-bottom:4px;
-			@include tablet_space;
-			}
-		@media screen and (min-width: $desktop_body) {
-			margin-bottom:5px;
-			@include desktop_space;
-			}
+		@media screen and (min-width: $tablet_body) {@include tablet_space;}
+		@media screen and (min-width: $laptop_body) {@include laptop_space;}
 		}
 	}
 @mixin grid_1_1_1 { // use this if(count($project[url_visual]) == 1){@include grid_1_1_1}
@@ -236,7 +242,7 @@ p.bottom {
 			height:316px;
 			margin-right:0%;
 			}
-		@media screen and (min-width: $desktop_body) {
+		@media screen and (min-width: $laptop_body) {
 			width:100%;
 			height:600px;
 			margin-right:0%;
@@ -252,8 +258,8 @@ p.bottom {
 			@include tablet_2;
 			&:nth-child(2n+2){margin-right:0%;}
 			}
-		@media screen and (min-width: $desktop_body) {
-			@include desktop_2;
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_2;
 			&:nth-child(2n+2){margin-right:0%}
 			}
 		}
@@ -267,8 +273,8 @@ p.bottom {
 			@include tablet_3;
 			&:nth-child(3n+3){margin-right:0;}
 			}
-		@media screen and (min-width: $desktop_body) {
-			@include desktop_3;
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_3;
 			&:nth-child(3n+3){margin-right:0;}
 			}
 		}
@@ -284,9 +290,9 @@ p.bottom {
 			@include tablet_2;
 			@include tablet_space;
 			}
-		@media screen and (min-width: $desktop_body) {
-			@include desktop_2;
-			@include desktop_space;
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_2;
+			@include laptop_space;
 			}
 		}
 	}
@@ -299,9 +305,9 @@ p.bottom {
 			@include tablet_2;
 			&:nth-child(2n+2){margin-right:0%;}
 			}
-		@media screen and (min-width: $desktop_body) {
-			@include desktop_3;
-			&:nth-child(2n+2){@include desktop_space}
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_3;
+			&:nth-child(2n+2){@include laptop_space}
 			&:nth-child(3n+3){margin-right:0;}
 			}
 		}
@@ -319,11 +325,30 @@ p.bottom {
 			&:nth-child(2n+2){@include tablet_space;}
 			&:nth-child(3n+3){margin-right:0;}
 			}
-		@media screen and (min-width: $desktop_body) {
-			@include desktop_3;
-			@include desktop_space;
-			&:nth-child(2n+2){@include desktop_space;}
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_3;
+			@include laptop_space;
+			&:nth-child(2n+2){@include laptop_space;}
 			&:nth-child(3n+3){margin-right:0;}		
+			}
+		}
+	}
+@mixin grid_3_3_4 { // use this if(count($project[url_visual]) == 6){@include grid_2_3_3}
+	@include grid;
+	li {
+		//$mobile_body below
+		@include mobile_3;
+		@include mobile_space;
+		@media screen and (min-width: $tablet_body) {
+			@include tablet_3;
+			@include tablet_space;
+			}
+		@media screen and (min-width: $laptop_body) {
+			@include laptop_4;
+			@include laptop_space;	
+			}
+		@media screen and (min-width: $desktop_body) {
+			@include desktop_4;
 			}
 		}
 	}
@@ -353,10 +378,11 @@ p.bottom {
 .grid_2_2_2 {@include grid_2_2_2}
 .grid_1_2_3 {@include grid_1_2_3}
 .grid_2_3_3 {@include grid_2_3_3}
+.grid_3_3_4 {@include grid_3_3_4}
 
 @mixin grayscale_tocolor {
 	li {
-		@media screen and (min-width: $desktop_body) {
+		@media screen and (min-width: $laptop_body) {
 			@include vp('filter','grayscale(100%)');
 			&:hover {@include vp('filter','grayscale(0%)');}
 			}
@@ -390,13 +416,13 @@ p.bottom {
 .common_social {
 	@include vp('border-radius','2px');
 	@include vp('transition','.25s');
-	background-image:url(_library/asset/ico_sprite_social.svg);
+	background-image:url(_library/asset/ico_sprite_social_b.svg);
 	background-size:1000%;
 	height:30px;width:30px;
 	display:inline-block;
 	margin-right:5px;
 	&:last-child {margin-right:0;}
-	&:hover {background-position-y: 60px;}
+	&:hover {background-position-y: -60px;}
 	}
 
 $color_instagram:#2a5b83;
@@ -490,7 +516,7 @@ h1 { // Large header text
 		line-height:31px;
 		margin-bottom:23px;
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 		font-size:40px;
 		line-height:40px;
 		margin-bottom:32px;
@@ -514,7 +540,7 @@ h2 { // Large copy text usually placed underneath header, followed by text
 		line-height:32px;
 		padding-bottom:24px;
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 		padding-top:54px;
 		font-size:31px;
 		line-height:37px;
@@ -546,13 +572,29 @@ p {
 		font-size:15px;
 		line-height:28px;
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 		font-size:16px;
 		line-height:30px;
 		}
 	}
 
 p.label {}
+
+.mobile_pro { // hide for tablet and desktop
+	@media screen and (min-width: $tablet_body) {display:none;}
+	}
+.mobile_anti { // hide mobile only
+	display:none;
+	@media screen and (min-width: $tablet_body) {display:initial;}
+	}
+
+.device_pro { // hide 
+	@media screen and (min-width: $laptop_body) {display:none;}
+	}
+.device_anti { // for desktop only
+	display:none;
+	@media screen and (min-width: $laptop_body) {display:initial;}
+	}
 
 //////////////////////////////////////////////////
 /* —————————————————— RESET ——————————————————— */
@@ -572,28 +614,36 @@ p.label {}
 @mixin logo_primary {
 	display:inline-block;
 	vertical-align: middle;
-	background-image:url(_library/asset/gfx_logo_primary.svg);
+	background-image:url(_library/asset/gfx_logo_primary_b.svg);
 	background-position:center;
 	background-repeat:no-repeat;
-	background-size:90%;
+	background-size:78%;
 	width:136px;
 	height:62px;
 	margin-bottom:50px;
-	@media screen and (min-width: $tablet_body) {width:216px;height:100px;} // 760px viewport width using 642px body using 59px left & right margins
-	@media screen and (min-width: $desktop_body) {width:216px;height:100px} // 1440px viewport width using 1200px body using 120px left & right margins
+	@media screen and (min-width: $tablet_body) {
+		width:216px;
+		height:100px;
+		background-size:60%;
+		} // 760px viewport width using 642px body using 59px left & right margins
+	@media screen and (min-width: $laptop_body) {
+		background-size:60%;
+		width:216px;
+		height:100px
+		} // 1440px viewport width using 1200px body using 120px left & right margins
 	}.logo_primary {@include logo_primary;}
 
 @mixin logo_interior {
 	display:inline-block;
 	vertical-align: middle;
-	background-image:url(_library/img/asset/gfx_logo_primary.png);
+	background-image:url(_library/img/asset/gfx_logo_primary_b.png);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:60%;
 	width:287px;
 	height:80px;
 	@media screen and (min-width: $tablet_body) {background-size:70%;} 
-	@media screen and (min-width: $desktop_body) {background-size:90%;}
+	@media screen and (min-width: $laptop_body) {background-size:90%;}
 	}
 .logo_interior {
 	@include logo_interior;
@@ -616,7 +666,7 @@ p.label {}
     margin-bottom:10px;
     font-weight:300;
 	font-size:16px;
-	@media screen and (min-width: $desktop_body) {margin-top:-29px;}
+	@media screen and (min-width: $laptop_body) {margin-top:-29px;}
 
 	div.line {
 		display:inline-block;
@@ -627,7 +677,7 @@ p.label {}
 		@media screen and (min-width: $tablet_body) {
 			width:40pt;
 			}
-		@media screen and (min-width: $desktop_body) {
+		@media screen and (min-width: $laptop_body) {
 			width:65px;
 			}
 		}
@@ -679,7 +729,7 @@ p.label {}
 	    margin-top: -58px;
 	    margin-bottom: 48px;
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 	    margin-top: -62px;
 	    margin-bottom: 46px;
 		}
@@ -688,70 +738,215 @@ p.label {}
 .title_primary {
 	margin-top:-19px;
 	@media screen and (min-width: $tablet_body) {margin-top:0;}
-	@media screen and (min-width: $desktop_body) {margin-top:0;}
+	@media screen and (min-width: $laptop_body) {margin-top:0;}
 	}
 
 
 .section_divide {
-	background-image:url(_library/asset/bg_divide.gif);
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 	display:block;
-	overflow:auto;
-	background-color:$color_black;
+	overflow:hidden;
 	padding-top:0;
 	padding-bottom:0;
-	.container_line_recent {
+	height:400px;
+	@include vertical_center;
+	text-align:center;
+	.inner {
 		display:inline-block;
-		overflow:auto;
-		margin-top:24px;
-		margin-bottom:24px;
-		.above_below {
-			display:block;
-			background-image:url(_library/asset/gfx_diagonal.png);
-			background-repeat:no-repeat;
-			background-position:center;
-			width:4px;
-			margin:0 auto;
-			}
-		.line_above {
-			@extend .above_below;
-			height:58px;
-			}
-		.gfx_recent {
-			display:block;
-			background-image:url(_library/asset/gfx_divide.svg);
-			background-position:center;
-			background-repeat:no-repeat;
-			background-size:cover;
-			width:120px;height:113px;
-			margin-top:10px;
-			margin-bottom:10px;
-			}
-		.line_below {
-			@extend .above_below;
-			height:63px;
+		p {
+		    color: white;
+		    font-family: lato;
+		    text-transform: uppercase;
+		    font-weight: 200;
+		    letter-spacing: 2px;
+		    font-size: 16px;
 			}
 		}
 	}
+
+.section_portfolio {
+	background-color:$color_black;
+	padding-top:0px;padding-bottom:0px;
+	@media screen and (min-width: $tablet_body) {padding-top:0px;padding-bottom:0px;}
+	@media screen and (min-width: $laptop_body) {padding-top:0px;padding-bottom:0px;}
+	ul {
+		padding:0;
+		background-color:$color_black;
+		li {
+			@include vp('transition','.125s');
+			position:relative;
+			overflow:hidden;
+			// ————————————————————————————— HOVER LAYER
+			&:hover { 
+				.layer_text {
+					opacity:1;
+					.container_layer_text {
+						p.title_project {margin-bottom:-20px;}
+						.layer_text_line {
+							width:60px;
+							background-color:$color_brand_primary;
+							}
+						}
+					}
+				.layer_dark {
+					background-color:black;
+					}
+				.layer_img_portfolio {
+					@include vp('transform','scale(1.025,1.025)');
+					}
+				}
+			// ————————————————————————————— END OF HOVER LAYER
+			.layer_text {
+				@include vp('transition','.125s');
+				@include vertical-center;
+				left:0;top:0;
+				opacity:0;
+				z-index:30;
+				padding:20px;
+				position:absolute;
+				width:100%;height:100%;
+				.container_layer_text {
+					display:inline-block;
+					text-align:center;
+					width:100%;
+					vertical-align: middle;
+					p.title_project {
+						@include vp('transition','.25s');
+						display:inline-block;
+						width:100%;
+						color:white;
+						@include use_noto;
+						font-size:10px;
+						text-transform:uppercase;
+						font-weight: 500;
+		    			letter-spacing: 2.3px;
+						line-height:1.2;
+						margin-bottom:40px;
+						@media screen and (min-width: $tablet_body) {
+							font-size:17px;
+							}
+						@media screen and (min-width: $laptop_body) {
+							font-size:22px;
+							}
+						}
+					.layer_text_line {
+						@include vp('border-radius','2px');
+						@include vp('transition','.5s');
+						width:20px;
+						height:2px;
+						background-color:$color_brand_primary;
+						display:inline-block;
+						}
+					p.location {
+						@include vp('transition','.125s');
+						display:inline-block;
+						width:100%;
+						@include use_fira;
+						font-style:italic;
+						font-size:10px;
+						color:white;
+						@media screen and (min-width: $tablet_body) {
+							font-size:12px;
+							}
+						@media screen and (min-width: $laptop_body) {
+							font-size:14px;
+							}
+						}
+					ul {
+						@include hide;
+						display:inline-block;
+						overflow: auto;
+						display: inline-block;
+						background-color:transparent;
+						@media screen and (min-width: $laptop_body) {
+							@include unhide;
+							margin-top:15px;
+							}
+						li {
+							@include vp('box-sizing','content-box');
+							display:inline-block;
+							@include vp('border-radius','50%');
+							@include vp('transition','.25s');
+							padding:0;
+							margin:0;
+							// border:3px solid $color_shade;
+							background-image:url(_library/asset/ico_sprite_badge.svg);
+							background-size:600%;
+							background-color:transparent;
+    						background-position-y: -40px;
+							height:40px;width:40px;
+							display:inline-block;
+							margin-right:5px;
+							&:last-child {margin-right:0;}
+							&:hover {
+								background-position-y: 0px;
+								border-color:white;
+								}
+							}
+						}
+					}
+				}
+			.layer_dark {
+				@include vp('transition','.25s');
+				z-index:20;
+				position:absolute;
+				width:100%;height:100%;
+				opacity:.95;
+				}	
+			.layer_img_portfolio {
+				@include vp('transition','.125s');
+				background:black;
+				z-index:10;
+				position:absolute;
+				width:100%;height:100%;
+				@include vp('transform','scale(1.01,1.01)');
+				}
+			}
+		}
+	}
+
+li.xd {background-position-x: -1px !important;}
+li.id {background-position-x: -41px !important;}
+li.fed {background-position-x: -80px !important;}
+li.ur {background-position-x: -120px !important;}
+li.vd {background-position-x: -159px !important}
+li.cs {background-position-x: -199px !important}
 
 //////////////////////////////////////////////////
 /* ————–––––———————— CSS MAIN —–––––——————————— */
 //////////////////////////////////////////////////
 
 .header_main {
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color:white;
+	padding-bottom:0;
+	padding-top:0;
 	.container {
 		display:inline-block;
 		vertical-align: middle;
 		.logo_primary {margin-bottom:23.389355322339vh;}
+		.header_introduce {
+			font-weight:600;
+			font-family: lato;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    color:$color_brand_secondary;
+			}
+		.header_position {
+			line-height:1;
+			margin-bottom:60px;
+			}
 		.header_description {
 			@include use_noto;
-			color:white;
-			border-top: 2px solid white;
+			color:black;
+			border-top: 2px solid #999;
 		    padding-top: 20px;
 		    padding-bottom: 22px;
-		    border-bottom: 2px solid white;
+		    border-bottom: 2px solid #999;
 		    margin: 0 auto;
 		    margin-bottom:6.513343328336vh;
 			}
@@ -793,18 +988,286 @@ p.label {}
 		.container {
 			.logo_primary {margin-bottom:26.003309692671vh;}
 			.header_description {
-				width:100%;
-				margin-bottom:17.82962962963vh;
+				width:75%;
+				margin-bottom:11.82963vh;
 				}
 			}
 		}
-	@media screen and (min-width: $desktop_body) {
+	@media screen and (min-width: $laptop_body) {
 		.container {
 			.logo_primary {margin-bottom:25.386888888889vh;}
 			.header_description {
-				width:74.164083333333%;
+				width:50%;
 				margin-bottom:10.362vh;
 				}
 			}
+		}
+	}
+
+.about {
+	padding-top:0;
+	padding-bottom:0;
+	.about_upper {
+		background-image:url(_library/asset/img_about.png);
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+		height:180px;width:100%;
+		@media screen and (min-width: $tablet_body) {height:250px;}
+		@media screen and (min-width: $laptop_body) {height:400px;}
+
+		.inner {
+			position:relative;
+			height:100%;
+			.side_buttons {
+				&:hover {
+					border:2px solid white;
+					}
+				@include use_noto;
+				@include vp('transition','.125s');
+				position:absolute;
+				background-size:initial;
+				display:inline-block;
+				background-repeat:no-repeat;
+				font-size:14px;
+				font-weight:500 !important;
+				color:white;
+				letter-spacing:2px;
+				padding:10px;
+				border:2px solid transparent;
+				padding-top: 7px;
+			    padding-left: 43px;
+			    padding-right: 20px;				
+				}
+			.email {
+				@extend .side_buttons;
+				background-position-x: 10px;
+				background-image:url(_library/asset/ico_mail.svg);
+				left:-33px;
+				top:59px;
+				@include vp('border-radius','2px');
+				@include vp('transform','rotate(90deg)');
+				@media screen and (min-width: $tablet_body) {left:-81px;}
+				@media screen and (min-width: $laptop_body) {
+					@include vp('box-shadow','0 0 3px #222');
+				    left: 160px;
+				    top: 293px;
+				    border:2px solid white;
+					}
+				}
+			.resume {
+				@extend .side_buttons;
+				background-position-x: 13px;
+				background-image:url(_library/asset/ico_resume.svg);
+				right:-41px;
+				top:67px;
+				@include vp('border-radius','2px');
+				@include vp('transform','rotate(90deg)');
+				@media screen and (min-width: $tablet_body) {right:-90px;}
+				@media screen and (min-width: $laptop_body) {
+					@include vp('box-shadow','0 0 3px #222');
+					right:inherit;
+					top: 301px;
+    				left: 200px;
+    				border:2px solid white;
+					}
+				}
+			}
+		}
+	.about_below {
+		background-color:#f0f0f0;
+		padding-bottom:40px;
+		@media screen and (min-width: $laptop_body) {background-color:white;}
+		.inner {
+			@include clearfix;
+			.content_bio {
+				text-align:center;
+				margin-bottom:70px;
+				.profile_pic {
+					@include vp('box-shadow','0 0 3px #222');
+					display:inline-block;
+					background-image:url(_library/asset/img_profile_pic.png);
+					background-size:cover;
+					background-position:center;
+					background-repeat:no-repeat;
+					width:120px;height:120px;
+					border:2px solid white;
+					@include vp('border-radius','2px');
+					margin-bottom:40px;
+					margin-top:-90px;
+					}
+				.name {
+					@include use_lato;
+					color:$color_brand_secondary;
+					font-weight:500;
+					text-transform:uppercase;
+					letter-spacing:2px;
+					}
+				.title {
+					font-style:italic;
+					font-weight:300;
+					}
+				.line_divider {
+					@include vp('border-radius','2px');
+					display:inline-block;
+					width:50px;
+					background-color:$color_brand_secondary;
+					height:2px;
+					margin-top:18px;
+					margin-bottom:40px;
+					}
+				.paragraph {
+					p {}
+					}
+				@media screen and (min-width: $tablet_body) {
+					// .content_bio for tablet
+
+					}
+				@media screen and (min-width: $laptop_body) {
+					// .content_bio for desktop
+					float:left;
+					width:62%;
+					margin-right:5.5%;
+					text-align:left;
+					.profile_pic {
+						display:block;
+						text-align:left;
+						margin-top:-151px;
+						width:190px;height:190px;
+						}
+					.name {
+						display:block;
+						text-align:left;
+						}
+					.title {
+						display:block;
+						text-align:left;
+						}
+					.line_divider {
+						display:block;
+						text-align:left;
+						}
+					.paragraph {
+						text-align:left;
+						p {
+							display:block;
+							text-align:left;
+							}
+						}
+					}
+				}
+			.content_scorecard {
+				@include vp('transition','.125s');
+				text-align:center;
+				.icon_scorecard {
+					display:inline-block;
+					background-image:url(_library/asset/icon_scorecard.png);
+					background-size:cover;
+					background-repeat:no-repeat;
+					background-position:center;
+					width:35px;height:35px;
+					margin-bottom:25px;
+					}
+				ul {
+					text-align:center;
+					padding-bottom:30px;
+					.section_score_type {
+						@include vp('transition','.125s');
+						&:hover {
+							background:$color_black;
+							.score_amount {color:white;}
+							}
+						@include vp('border-radius','2px');
+					    padding-top: 27px;
+					    padding-bottom: 19px;
+						background-color:white;
+						width:32.338208955224%;
+						display:inline-block;
+						margin-right:1.492537313433%;
+						margin-bottom:5px;
+						&:nth-child(3n+3){margin-right:0;}
+						.score_amount {
+							@include use_lato;
+							font-weight:500;
+							margin-bottom: 10px;
+							font-size:41px;
+							color:$color_black;
+							}
+						.score_type {
+							@include use_noto;
+							font-weight:400;
+							color:$color_brand_secondary;
+							}
+						}
+					}
+				p.scorecard_description {
+					@include use_noto;
+					padding-top:20px;
+					border-top:1px solid black;
+					}
+				@media screen and (min-width: $tablet_body) {
+					// .content_scorecard for tablet
+					ul {
+						.section_score_type {
+							width:16.147507788162%;
+							margin-right:0.623052959502%;
+							&:nth-child(3n+3){margin-right:0.623052959502%;
+								}
+							&:last-child {margin-right:0;}	
+							}
+						}
+					}
+				@media screen and (min-width: $laptop_body) {
+					// .content_scorecard for desktop
+					&:hover {background-color:darken(#f0f0f0,2.5%)}
+					float:left;
+					width:32.5%;
+					padding:35px;
+					margin-top:77px;
+					margin-bottom:77px;
+					background-color:#f0f0f0;
+					ul {
+						.section_score_type {
+							width:32.497492163009%;
+							margin-right:1.253918495298%;
+							&:nth-child(3n+3){margin-right:0}
+							}
+						}
+					}
+				}
+			}
+		}		
+	}
+.footer {
+	@include vertical_center;
+	text-align:center;
+	height:296px;
+	background:url(_library/asset/bg_divide.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:0;
+	a {
+		vertical-align: middle;
+		display:inline-block;
+		@include use_lato;
+		padding:20px 40px;
+		text-transform:uppercase;
+		border:2px solid white;
+		@include vp('border-radius','2px');
+		color:white;
+		}
+	}
+.copyright {
+	text-align:center;
+	padding:0;
+	padding:30px;
+	background-color:$color_black;
+	p {
+		@include use_noto;
+		font-size:13px;
+		font-weight:200;
+		margin:0 auto;
+		color:white;
 		}
 	}

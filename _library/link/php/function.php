@@ -1,20 +1,29 @@
-<? /* ————————————————————————————————————————————————————————————
+<? /* —————————————————————————————————————————————————————————
 
 [function.php]
 
 global functions to help control output
 
-Ugly Apostraphe = ’; //find all and replace with '
-
 ———————————————————————————————————————————————————————————— */
+
+/* ————————————————————————————————————————————————————————————
+//////////////////////////// NOTES ////////////////////////////
+
+Nonbreaking Hyphen = &#8209;
+Ugly Apostraphe = ’; //find all and replace with '
+———————————————————————————————————————————————————————————— */
+
+
 
 /* ————————————————————————————————————————————————————————— */
 //////////////////////////// TEXT /////////////////////////////
 /* ————————————————————————————————————————————————————————— */
 
 $loremipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-$text_header = "Ninyo has worked as a designer for multiple nonprofits in Seattle’s International District, and for recognizable names such as T-Mobile, UW, Starbucks, and Amazon to name a few. — Mentor Creative";
-$text_passcode = "Only the most recent or representative style of projects are shown above. To see all projects, type in the code to the right.";
+$introduce = "Ninyo Aganon";
+$position = "Interaction + Visual Designer";
+// $description = "I've worked as a visual designer for numerous non-profit projects within Seattle's International District, and for recognizable names such as: T&#8209;Mobile, University&nbsp;of&nbsp;Washington, Starbucks, and Amazon to name a few.";
+$traits = "I enjoy the little details: just the right amount of leading, understanding the re-orientation of objects within a responsive composition, multiple-layer hover states, faded color, and handcrafted details";
 
 /* ————————————————————————————————————————————————————————— */
 ////////////// HAND CRAFTED FUNCTIONS FOR REUSE ///////////////
@@ -71,20 +80,6 @@ function clipboard_title_interior($title, $below){
 	return $output;} //close function 
 	/* ———————————————————————————————— */
 	$_clipboard_title_interior = clipboard_title_interior();
-
-/* ————————————————————————————————————————————————————————— */
-
-function clipboard_separator(){
-	/* ——————————————————————————————————
-	DESCRIPTION:
-	——————————————————————————————————— */
-	
-	$output = $output . '<div class="separator"></div>';
-	
-	/* ———————————————————————————————— */
-	return $output;}//close function 
-	/* ———————————————————————————————— */
-	$_clipboard_separator = clipboard_separator();
 
 /* ————————————————————————————————————————————————————————— */
 
@@ -205,6 +200,12 @@ function clipboard_container_grid(){
 /* ————————————————————————————————————————————————————————— */
 
 function component_li_portfolio_piece(){
+	/* ——————————————————————————————————
+	DESCRIPTION: these are the list items that will be loopped.
+	——————————————————————————————————— */
+
+	
+
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -238,7 +239,7 @@ function component_social_bar(){
 		);
 	$array_social[vimeo] = array(
 		"url" => "http://vimeo.com/",
-		"username" => "ninyo/videos",
+		"username" => "ninyo/videos/sort:date/format:thumbnail",
 		"intent" => "personal experiments",
 		);
 	$array_social[twitter] = array(
@@ -285,15 +286,19 @@ function component_social_bar(){
 
 function header_main(){
 	global $_component_social_bar;
+	global $introduce;
+	global $position;
+	global $description;
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
-	
-	$output = $output . '<div class="header_main section">';
+	$output = $output . '<div class="section header_main">'; // style="background:url(_library/asset/img_header.png);"
 		$output = $output . '<div class="inner" style="display:inline-block;">';
 		$output = $output . '<div class="container">';
-			$output = $output . '<div class="logo_primary"></div>';
-			$output = $output . '<p class="header_description">Ninyo has worked as a designer for multiple nonprofit projects in Seattle’s International District, and for recognizable names such as: T-Mobile, UW, Starbucks, and Amazon (amongst many other companies).</p>';
+			// $output = $output . '<div class="logo_primary"></div>';
+			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
+			$output = $output . '<p class="header_position">'.$position.'</p>';
+			$output = $output . "<p class='header_description'>Understanding how clients value the deliverables I've created (as well as how their target audience interacts with it) makes me really consider how I design. Being a visual designer over the past couple years has influenced the way I strive for its long-term value.</p>";
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -306,30 +311,36 @@ function header_main(){
 
 /* ————————————————————————————————————————————————————————— */
 
-function header_short(){
+function header_interior(){
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
 
+	$output = $output . '<div class="section"></div>';
 
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
-	$_header_short = header_short();
+	$_header_interior = header_interior();
 
 /* ————————————————————————————————————————————————————————— */
 
 function section_divide(){
+	global $description;
 	/* ——————————————————————————————————
-	DESCRIPTION:
+	DESCRIPTION: this shit was cool. i got to add a 5 second loop of a gif background.
 	——————————————————————————————————— */
 
-	$output = $output . '<div class="section section_divide"><div class="inner">';
-		$output = $output . '<div class="container_line_recent">';
-			$output = $output . '<div class="line_above"></div>';
-			$output = $output . '<div class="gfx_recent"></div>';
-			$output = $output . '<div class="line_below"></div>';
-		$output = $output . '</div>';
+	// $output = $output . '<div class="section section_divide" data-parallax="scroll" data-image-src="_library/asset/img_header.png"><div class="inner">';
+	// 	$output = $output . '<div class="container_line_recent">';
+	// 		$output = $output . '<div class="line_above"></div>';
+	// 		$output = $output . '<div class="gfx_recent"></div>';
+	// 		$output = $output . '<div class="line_below"></div>';
+	// 	$output = $output . '</div>';
+	// $output = $output . '</div></div>';
+
+	$output = $output . '<div class="section section_divide" data-parallax="scroll" data-image-src="_library/asset/img_header.png"><div class="inner">';
+		$output = $output . '<p style="color:white">Below are 24 projects that I\'ve decided to share.</p>';
 	$output = $output . '</div></div>';
 
 	/* ———————————————————————————————— */
@@ -340,9 +351,43 @@ function section_divide(){
 /* ————————————————————————————————————————————————————————— */
 
 function section_portfolio_grid(){
+	global $array_projects;
 	/* ——————————————————————————————————
-	DESCRIPTION:
+	DESCRIPTION: this will be featuring a grid of 4x3 on desktop and 3x4 on mobile and tablet. usually people use a 2 column grid on mobile, but i will do a 3 column grid like instagram.
 	——————————————————————————————————— */
+	$output = $output . '<div class="section section_portfolio">';
+		$output = $output . '<ul class="grid_3_3_4">';
+		$count = 0;
+		foreach($array_projects as $id => $project){
+			$count = $count +1;
+			if($count < 25){
+				if($project[category]=='work'){
+					$output = $output . '<li>';
+						$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';
+							$output = $output . '<div href="project.php" class="container_layer_text">';
+								$output = $output . '<p class="title_project">'.strtoupper($project[title]).'</p>';
+								$output = $output . '<div class="layer_text_line" style="background-color:#'.$project[hex].'"></div>';
+								$output = $output . '<p class="location">'.ucwords($project[subtitle]).'</p>';
+								$output = $output . '<ul>';
+									foreach($project[badge] as $badge){
+										$output = $output . '<li class="'.$badge.'"></li>';
+										}
+								$output = $output . '</ul>';
+							$output = $output . '</div>';
+						$output = $output . '</a>';
+						$output = $output . '<div class="layer_dark"></div>';
+						if($project[cover]!==""){
+							$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
+							}else{
+							$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/img_project_null.png)center no-repeat;background-size:cover;"></div>';
+							}
+					$output = $output . '</li>';
+					}
+				}
+			} // end of foreach loop
+		$output = $output . '</ul>';
+	$output = $output . '</div>';
+
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -351,9 +396,98 @@ function section_portfolio_grid(){
 /* ————————————————————————————————————————————————————————— */
 
 function section_about(){
+	global $position;
+	global $introduce;
+	global $array_projects;
+	$array_scorecard = array('xd','id','ur','fed','vd','cs');
+	$count_xd = 0;
+	$count_id = 0;
+	$count_fed = 0;
+	$count_ur = 0;
+	$count_vd = 0;
+	$count_cs = 0;
+
+	foreach($array_projects as $id => $project){
+		if(in_array("xd",$project[badge])){
+			$count_xd = $count_xd +1;
+			}
+		if(in_array("id",$project[badge])){
+			$count_id = $count_id +1;
+			}
+		if(in_array("ur",$project[badge])){
+			$count_ur = $count_ur +1;
+			}
+		if(in_array("fed",$project[badge])){
+			$count_fed = $count_fed +1;
+			}
+		if(in_array("vd",$project[badge])){
+			$count_vd = $count_vd +1;
+			}
+		if(in_array("cs",$project[badge])){
+			$count_cs = $count_cs +1;
+			}
+		}
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
+	$output = $output . '<div class="section about">';
+		$output = $output . '<div class="about_upper">';
+			$output = $output . '<div class="inner">';
+				$output = $output . '<div class="email">EMAIL</div>';
+				$output = $output . '<div class="resume">RESUME</div>';
+			$output = $output . '</div>';
+		$output = $output . '</div>';
+		$output = $output . '<div class="section_bar" style="height:5px;width:100%;background-color:black;"></div>';
+		$output = $output . '<div class="about_below">';
+			$output = $output . '<div class="inner">';
+				/*—————Left Side Bio—————*/
+				$output = $output . '<div class="content_bio">';
+					$output = $output . '<div class="profile_pic"></div>';
+					$output = $output . '<p class="name">'.$introduce.'</p>';
+					$output = $output . '<p class="title">'.$position.'</p>';
+					$output = $output . '<div class="line_divider"></div>';
+					$output = $output . '<div class="paragraph">';
+						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design is what gives my work a great deal of foundation. I also consider myself more multi&#8209disciplinary from a personal interest with: front&#8209end development (Sass, CSS, PHP, HTML), user experience (Human&#8209Centered Design), web design, and videography (Using a C100).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the culture of Hip&#8209hop through its artform of dance (articulating ideas) and graffiti (form of typography). This cultivated my strive for creative thought, which brought me to where I belong today.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>My short&#8209term goal is to be able to utilize all of my skills to help businesses within my community by concentrating my efforts as an overall creative, and I'm still letting life do its thing to formulate a long&#8209term goal.</p>";
+					$output = $output . '</div>';
+				$output = $output . '</div>';
+				/*—————Right Side Scorecard—————*/
+				$output = $output . '<div class="content_scorecard">';
+					$output = $output . '<div class="icon_scorecard"></div>';
+					$output = $output . '<ul>';
+						// I don't know how to create dynamic variables so i have to do this the long way for now.
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_xd.'</p>';
+							$output = $output . '<p class="score_type">XD</p>';
+						$output = $output . '</li>';
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_id.'</p>';
+							$output = $output . '<p class="score_type">ID</p>';
+						$output = $output . '</li>';
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_fed.'</p>';
+							$output = $output . '<p class="score_type">FED</p>';
+						$output = $output . '</li>';
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_ur.'</p>';
+							$output = $output . '<p class="score_type">UR</p>';
+						$output = $output . '</li>';
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_vd.'</p>';
+							$output = $output . '<p class="score_type">VD</p>';
+						$output = $output . '</li>';
+						$output = $output . '<li class="section_score_type">';
+							$output = $output . '<p class="score_amount">'.$count_cs.'</p>';
+							$output = $output . '<p class="score_type">CS</p>';
+						$output = $output . '</li>';
+					$output = $output . '</ul>';
+					$output = $output . "<p class='scorecard_description'>The numbers above are dynamically pulling numbers from each project from a project pool to generate these results.</p>";
+				$output = $output . '</div>';
+			$output = $output . '</div>';
+		$output = $output . '</div>';
+	$output = $output . '</div>';
+
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -362,9 +496,19 @@ function section_about(){
 /* ————————————————————————————————————————————————————————— */
 
 function section_footer(){
+	global $headtitle;
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
+
+	$output = $output . '<div class="section footer">';
+		if($headtitle == 'main'){
+			$output = $output . '<a>Thank You</a>';
+		}else{
+			$output = $output . '<a href="/">Back to main</a>';
+			}
+	$output = $output . '</div>';
+	$output = $output . '<div class="section copyright"><p>&copy; '.date('Y').' Site designed by nin-yo.com. No Wordpress Template or Bootstrap. All Rights Reserved.</p></div>';
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
