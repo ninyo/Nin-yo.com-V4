@@ -20,7 +20,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,300,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body style="background:black;">
+<body style="background:#fafafa;">
 
 <?// ————————————————————————— END OF HEADER —————————————————————————?>
 

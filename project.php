@@ -14,6 +14,7 @@ ECHO CLIPBOARD BELOW
 ————————————————————————————————————————————————————————— */
 
 echo $_header_interior;
+echo $_section_interior;
 echo $_section_footer;
 
 ?>

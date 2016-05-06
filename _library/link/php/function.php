@@ -11,6 +11,9 @@ global functions to help control output
 
 Nonbreaking Hyphen = &#8209;
 Ugly Apostraphe = ’; //find all and replace with '
+
+Replace all words
+Projects -> Work
 ———————————————————————————————————————————————————————————— */
 
 
@@ -298,7 +301,8 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>Understanding how clients value the deliverables I've created (as well as how their target audience interacts with it) makes me really consider how I design. Being a visual designer over the past couple years has influenced the way I strive for its long-term value.</p>";
+			$output = $output . "<p class='header_description'>Being a visual designer influences how and what I see. My eyes will usually dart towards good composition, and I'll question the piece to understand why I liked it. Keeping attentive to these questions at times reveal a bigger understanding of design than you had the day before.</p>";
+			// $output = $output . "<p class='header_description'>Being a visual designer over the past couple years has influenced the way I strive to design through its many layers of interactivity and viewing widths to aim for its long&#8209term value.</p>"; //This site that contains my work demonstrates a responsive approach to design.
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -312,11 +316,18 @@ function header_main(){
 /* ————————————————————————————————————————————————————————— */
 
 function header_interior(){
+	global $array_projects;
+	$match = $_GET['id'];
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
 
-	$output = $output . '<div class="section"></div>';
+	foreach($array_projects as $id => $project){
+		if($match == $id){
+			$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
+			// $output = $output . '<div class="section header_interior" data-parallax="scroll" data-image-src="_library/asset/_projects/'.$project[foldername].'/'.$project[cover].'"></div>'; 
+			}
+		}
 
 	/* ———————————————————————————————— */
 	return $output;}//close function
@@ -447,9 +458,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design is what gives my work a great deal of foundation. I also consider myself more multi&#8209disciplinary from a personal interest with: front&#8209end development (Sass, CSS, PHP, HTML), user experience (Human&#8209Centered Design), web design, and videography (Using a C100).</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the culture of Hip&#8209hop through its artform of dance (articulating ideas) and graffiti (form of typography). This cultivated my strive for creative thought, which brought me to where I belong today.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>My short&#8209term goal is to be able to utilize all of my skills to help businesses within my community by concentrating my efforts as an overall creative, and I'm still letting life do its thing to formulate a long&#8209term goal.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the culture of Hip&#8209hop through its artform of dance (formulating ideas) and graffiti (typographic experiments). This cultivated my strive for creative thought, which brought me to where I belong today.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design gave foundation to my work, while being multi&#8209disciplinary from a personal standpoint through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
@@ -482,7 +492,7 @@ function section_about(){
 							$output = $output . '<p class="score_type">CS</p>';
 						$output = $output . '</li>';
 					$output = $output . '</ul>';
-					$output = $output . "<p class='scorecard_description'>The numbers above are dynamically pulling numbers from each project from a project pool to generate these results.</p>";
+					$output = $output . "<p class='scorecard_description'>These numbers are dynamically pulling data from each project from a project pool to generate results.</p>";
 				$output = $output . '</div>';
 			$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -492,6 +502,91 @@ function section_about(){
 	return $output;}//close function
 	/* ———————————————————————————————— */
 	$_section_about = section_about();
+
+/* ————————————————————————————————————————————————————————— */
+
+function section_interior(){
+	global $array_projects;
+	global $loremipsum;
+	$match = $_GET['id']; //this will equal the number it's on
+	$next = $match +1; //this will equal the next number
+	$prev = $match -1; //this will equal the previous number
+	$total = count($array_projects);
+	/* ——————————————————————————————————
+	DESCRIPTION:
+	——————————————————————————————————— */
+	$output = $output . '<div class="section section_interior">';
+		$output = $output . '<div class="section_bar" style="height:5px;width:100%;background-color:black;"></div>';
+		$output = $output . '<div class="inner">';
+			foreach($array_projects as $id => $project){
+				if($match == $id){
+					$output = $output . '<div class="interior_body">';
+						$output = $output . '<div class="body_nav">';
+							if($prev >= 0){ 
+								$output = $output . '<a id="prevLink" class="nav_prev" href="project.php?id='.$prev.'">';
+									$output = $output . '<div class="prev_arrow"></div>';
+									$output = $output . '<p>PREV</p>';
+								$output = $output . '</a>';
+								}else{
+								$output = $output . '<a id="prevLink" class="nav_prev" href="/">';
+									$output = $output . '<div class="prev_arrow"></div>';
+									$output = $output . '<p>HOME</p>';
+								$output = $output . '</a>';
+								}
+							if($total > $next){ 
+								$output = $output . '<a id="nextLink" class="nav_next" href="project.php?id='.$next.'">';
+									$output = $output . '<div class="next_arrow"></div>';
+									$output = $output . '<p>NEXT</p>';
+
+								$output = $output . '</a>';
+								}else{
+								$output = $output . '<a id="nextLink" class="nav_next" href="/">';
+									$output = $output . '<div class="next_arrow"></div>';
+									$output = $output . '<p>HOME</p>';
+								$output = $output . '</a>';
+								}
+						$output = $output . '</div>';
+						$output = $output . '<div class="body_content">';
+							$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;">';
+							$output = $output . '</div>';
+							$output = $output . '<div class="content_title">';
+								$output = $output . '<h1>'.$project[title].'</h1>';
+								$output = $output . '<p>'.$project[subtitle].'</p>';
+							$output = $output . '</div>';
+							$output = $output . '<div class="content_bar"></div>';
+							$output = $output . '<div class="content_personal">';
+								$output = $output . '<p>'.$project[personal].'</p>';
+							$output = $output . '</div>';
+							$output = $output . '<ul>';
+							foreach($project[content] as $type => $content){
+								$output = $output . '<li class="description_'.$type.'">';
+									$output = $output . '<h2>'.$type.'</h2>';
+									$output = $output . '<div></div>';
+									$output = $output . '<p>'.$content.'</p>';
+								$output = $output . '</li>';
+								}	
+							$output = $output . '</ul>';
+						$output = $output . '</div>'; // end body_content
+					$output = $output . '</div>'; // end interior_body
+					}
+				}
+		$output = $output . '</div>'; // end inner
+		$output = $output . '<div class="interior_video" style="background:black;height:100px;">';
+			$output = $output . '<div class="inner"></div>';
+		$output = $output . '</div>';
+		$output = $output . '<div class="interior_photos" style="background:black;height:100px;">';
+			$output = $output . '<div class="inner"></div>';
+		$output = $output . '</div>';
+		$output = $output . '<div class="interior_closing" style="background:black;height:100px;">';
+			$output = $output . '<div class="inner"></div>';
+		$output = $output . '</div>';
+	$output = $output . '</div>'; // end section_interior
+
+
+	/* ———————————————————————————————— */
+	return $output;}//close function
+	/* ———————————————————————————————— */
+	$_section_interior = section_interior();
 
 /* ————————————————————————————————————————————————————————— */
 
@@ -508,7 +603,7 @@ function section_footer(){
 			$output = $output . '<a href="/">Back to main</a>';
 			}
 	$output = $output . '</div>';
-	$output = $output . '<div class="section copyright"><p>&copy; '.date('Y').' Site designed by nin-yo.com. No Wordpress Template or Bootstrap. All Rights Reserved.</p></div>';
+	$output = $output . '<div class="section copyright"><p><span style="color:#665">&copy; '.date('Y').' Site designed by nin-yo.com. All Rights Reserved. Site created using pen on paper, InDesign CC, and <a href="github.com/ninyo" target="none" style="text-decoration:none;color:#665;font-weight:bold;">text files</a></span></p></div>';
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
