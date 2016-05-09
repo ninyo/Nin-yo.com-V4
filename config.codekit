@@ -2,6 +2,28 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19102",
 "files": {
+	"\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 788781,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704_original.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 923904,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704_original.JPG",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/IMG_2704_original.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/w-amazon-wildlife copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -24,6 +46,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/boogie-down-bremerton\/tn-bdbseal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 258973,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/tn-bdbseal.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/tn-bdbseal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/boogie-down-bremerton\/w-bdbseal-logo-2 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -35,13 +68,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_library\/asset\/_projects\/boogie-down-bremerton\/w-bdbseal-logo-2.png": {
-		"fileType": 32768,
+	"\/_library\/asset\/_projects\/boogie-down-bremerton\/work.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 332656,
-		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/w-bdbseal-logo-2.png",
-		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/w-bdbseal-logo-2.png",
+		"initialSize": 2.76102e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/work.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/boogie-down-bremerton\/work.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -68,6 +101,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/capsul.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 349359,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/capsul.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/capsul.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/w-capsul-01 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -86,6 +130,17 @@
 		"initialSize": 176670,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/w-capsul-01.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/capsul-mobile-app-lifestyle\/w-capsul-01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/foundation-night-club-web-design\/380475346.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 367708,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/foundation-night-club-web-design\/380475346.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/foundation-night-club-web-design\/380475346.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -156,6 +211,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/gofeisty-lifestyle-blog\/IMG_9465.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.16015e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/gofeisty-lifestyle-blog\/IMG_9465.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/gofeisty-lifestyle-blog\/IMG_9465.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/IMG_9475.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.55676e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/IMG_9475.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/IMG_9475.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/w_0020 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -174,6 +251,28 @@
 		"initialSize": 267305,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/w_0020.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/hokubei-hochi-welcome-home-history-booklet\/w_0020.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/logos-12\/bg_room.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.01165e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/logos-12\/bg_room.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/logos-12\/bg_room.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/logos-12\/bg_top_fall.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.01596e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/logos-12\/bg_top_fall.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/logos-12\/bg_top_fall.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -200,6 +299,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/luckystrike-safety-cards\/luckystrike.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 776446,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/luckystrike-safety-cards\/luckystrike.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/luckystrike-safety-cards\/luckystrike.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/luckystrike-safety-cards\/web_portfolio_6595 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -218,6 +328,17 @@
 		"initialSize": 228660,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/luckystrike-safety-cards\/web_portfolio_6595.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/luckystrike-safety-cards\/web_portfolio_6595.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/milbro-construction-branding\/154541456.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.19418e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/milbro-construction-branding\/154541456.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/milbro-construction-branding\/154541456.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -321,6 +442,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/rmco-rebrand\/IMG_2290.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 554304,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/IMG_2290.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/IMG_2290.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rocksolid-branding\/r.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 387133,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rocksolid-branding\/r.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rocksolid-branding\/r.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/rocksolid-branding\/w-rocksolid-01 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -365,6 +508,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 888163,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 945888,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/w-rootworx-03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 813231,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699_original.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 852660,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699_original.JPG",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/IMG_2699_original.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/school-illustration-poster\/web_portfolio_6647 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -383,6 +570,28 @@
 		"initialSize": 296369,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/web_portfolio_6647.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/school-illustration-poster\/web_portfolio_6647.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 788144,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714_original.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 762476,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714_original.JPG",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/starbucks-mfa\/IMG_2714_original.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -431,6 +640,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/uwajimaya-competition\/IMG_9468.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 434462,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/uwajimaya-competition\/IMG_9468.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/uwajimaya-competition\/IMG_9468.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/uwajimaya-competition\/print_7062 copy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -453,6 +673,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.03433e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712.JPG",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712_original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.00456e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712_original.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/IMG_2712_original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/watson-asset-design\/print_5773 copy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -471,6 +713,28 @@
 		"initialSize": 272905,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/print_5773.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/watson-asset-design\/print_5773.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/zooppa-admin-platform\/321792632.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7.98266e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/zooppa-admin-platform\/321792632.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/zooppa-admin-platform\/321792632.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/zooppa-community-platform\/180430088.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 494694,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/zooppa-community-platform\/180430088.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/zooppa-community-platform\/180430088.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

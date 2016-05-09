@@ -764,6 +764,7 @@ p.label {}
 	}
 
 .section_portfolio {
+	@include vp('transition','.5s');
 	background-color:$color_black;
 	padding-top:0px;padding-bottom:0px;
 	@media screen and (min-width: $tablet_body) {padding-top:0px;padding-bottom:0px;}
@@ -916,17 +917,21 @@ li.cs {background-position-x: -199px !important}
 //////////////////////////////////////////////////
 
 .header_interior {
-	height:210px;
-	@include vp('transition','.5s');
+	height:150px;
+	@include vp('transition','.25s');
 	@media screen and (min-width: $tablet_body) {
 		height:285px;
 		}
 	@media screen and (min-width: $laptop_body) {
 		height:360px;
+		&:hover {
+			height:500px;
+			}
 		}
 	}
 
 .header_main {
+	@include vp('transition','.5s');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -1228,6 +1233,7 @@ li.cs {background-position-x: -199px !important}
 				@media screen and (min-width: $laptop_body) {
 					// .content_scorecard for desktop
 					&:hover {background-color:darken(#f0f0f0,2.5%)}
+					@include vp('border-radius','2px');
 					float:left;
 					width:32.5%;
 					padding:35px;
@@ -1307,6 +1313,7 @@ li.cs {background-position-x: -199px !important}
 				@include clearfix;
 				margin-top:33px;
 				height:45px;
+				@media screen and (min-width: $tablet_body) {margin-top: 63px;}
 				@media screen and (min-width: $laptop_body) {margin-top:0;}
 				.nav_text {
 					position:relative;
@@ -1317,6 +1324,10 @@ li.cs {background-position-x: -199px !important}
 						display:inline-block;
 						font-weight:500;
 						line-height: 1.3;
+						opacity:0;
+						@media screen and (min-width: $tablet_body) {
+							opacity:1.0;
+							}
 						}
 					div {
 						@include vp('transition','.125s');
@@ -1325,12 +1336,15 @@ li.cs {background-position-x: -199px !important}
 						background-repeat:no-repeat;
 						background-size:200%;
 						width:12px;height:20px;
-						opacity:0;
+						opacity:1.0;
 						}
-					&:hover {
-						div {
-							@include vp('transition','.5s');
-							opacity:1.0;
+					@media screen and (min-width: $tablet_body) {
+						div {opacity:0;}
+						&:hover {
+							div {
+								@include vp('transition','.5s');
+								opacity:1.0;
+								}
 							}
 						}
 					}
@@ -1338,18 +1352,22 @@ li.cs {background-position-x: -199px !important}
 					@extend .nav_text;
 					float:left;
 					div {margin-right:5px;left:10px;}
-					&:hover {
-						padding-left:25px;
-						div {left:0px}
+					@media screen and (min-width: $tablet_body) {
+						&:hover {
+							padding-left:25px;
+							div {left:0px}
+							}
 						}
 					}
 				.nav_next {
 					@extend .nav_text;
 					float:right;
 					div {background-position-x:100%;right:10px}
-					&:hover {
-						padding-right:25px;
-						div {right:0px}
+					@media screen and (min-width: $tablet_body) {
+						&:hover {
+							padding-right:25px;
+							div {right:0px}
+							}
 						}
 					}
 				}
@@ -1357,15 +1375,16 @@ li.cs {background-position-x: -199px !important}
 				text-align:center;
 				margin-top:-20px;
 				.content_avatar {
+					@include vp('box-shadow','0 0 3px #222');
 					@include vp('transition','.5s');
 					@include vp('border-radius','2px');
 					display:inline-block;
 					background-color:black;
-					width:165px;height:165px;
-					margin-top: -113px;
+					width:140px;height:140px;
+					margin-top: -153px;
 					@media screen and (min-width: $tablet_body) {
 						width:200px;height:200px;
-						margin-top: -141px;
+						margin-top: -181px;
 						}
 					@media screen and (min-width: $laptop_body) {
 						width:215px;height:215px;
@@ -1401,7 +1420,15 @@ li.cs {background-position-x: -199px !important}
 				.content_personal {
 					p {
 						font-weight: 400;
-						margin-bottom: 40px;
+						margin-bottom:0;
+						@media screen and (min-width: $tablet_body) {margin-bottom: 40px;}
+						a {
+							@include use_noto;
+							text-transform: uppercase;
+						    font-size: 13px;
+						    font-weight: 500;
+						    color:$color_brand_secondary;
+							}
 						}
 					}
 				ul {
@@ -1413,19 +1440,34 @@ li.cs {background-position-x: -199px !important}
 				    	}
 				    li {
 				    	float:left;
-				    	p {font-size:14px;}
+				    	margin-top:40px;
+						@media screen and (min-width: $tablet_body) {margin-top:0;}
+				    	p {
+				    		font-size:14px;
+				    		color:darken($color_ash,40%);
+				    		}
+				    	&:hover {
+				    		h2 {
+				    			border-top:2px black solid;
+				    			color:$color_black;
+				    			}
+				    		div {opacity:1;}
+				    		p {color:$color_black;}
+				    		}
 				    	}
 				    div {
+				    	@include vp('transition','.125s');
 				    	display:inline-block;
 				    	width:3px;height:20px;
 				    	@include vp('border-radius','2px');
 				    	background-color:$color_brand_secondary;
 				    	margin: 10px 0px;
+				    	opacity:0;
 				    	}
 					.description {
 						@include use_noto;
 						text-transform:uppercase;
-						color:$color_black;
+						color:$color_brand_secondary;
 					    font-size: 14px;
 					    letter-spacing: 2.5px;
 					    font-weight: 600;
@@ -1438,9 +1480,6 @@ li.cs {background-position-x: -199px !important}
 					.description_situation {
 						h2 {
 							@extend .description;
-							@media screen and (min-width: $tablet_body) {
-								border-top:2px solid $color_black;
-								}
 							}
 						@media screen and (min-width: $tablet_body) {
 							p {margin-bottom:40px;}
@@ -1450,14 +1489,9 @@ li.cs {background-position-x: -199px !important}
 							margin-right:2.777777777778%;
 							margin-bottom:0;
 							display:inline-block;
-
-							h2,p {
-								color:$color_brand_secondary;
-								}
 							}
 						}
 					.description_approach {
-						@include mobile_anti;
 						h2 {
 							@extend .description;
 							}
@@ -1472,7 +1506,6 @@ li.cs {background-position-x: -199px !important}
 							}
 						}
 					.description_experience {
-						@include mobile_anti;
 						h2 {
 							@extend .description;
 							}

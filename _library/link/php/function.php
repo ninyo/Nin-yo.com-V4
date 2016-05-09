@@ -301,8 +301,7 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>Being a visual designer influences how and what I see. My eyes will usually dart towards good composition, and I'll question the piece to understand why I liked it. Keeping attentive to these questions at times reveal a bigger understanding of design than you had the day before.</p>";
-			// $output = $output . "<p class='header_description'>Being a visual designer over the past couple years has influenced the way I strive to design through its many layers of interactivity and viewing widths to aim for its long&#8209term value.</p>"; //This site that contains my work demonstrates a responsive approach to design.
+			$output = $output . "<p class='header_description'>Do visual design long enough, and it influences the way you view the world. My attention is drawn to well done design, and I'll usually make a mental note on why I liked it. Keeping attentive to trends at times reveal a stronger understanding of what's current and how you can apply them in the future.</p>";
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -312,27 +311,6 @@ function header_main(){
 	return $output;}//close function 
 	/* ———————————————————————————————— */
 	$_header_main = header_main();
-
-/* ————————————————————————————————————————————————————————— */
-
-function header_interior(){
-	global $array_projects;
-	$match = $_GET['id'];
-	/* ——————————————————————————————————
-	DESCRIPTION:
-	——————————————————————————————————— */
-
-	foreach($array_projects as $id => $project){
-		if($match == $id){
-			$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
-			// $output = $output . '<div class="section header_interior" data-parallax="scroll" data-image-src="_library/asset/_projects/'.$project[foldername].'/'.$project[cover].'"></div>'; 
-			}
-		}
-
-	/* ———————————————————————————————— */
-	return $output;}//close function
-	/* ———————————————————————————————— */
-	$_header_interior = header_interior();
 
 /* ————————————————————————————————————————————————————————— */
 
@@ -505,6 +483,31 @@ function section_about(){
 
 /* ————————————————————————————————————————————————————————— */
 
+function header_interior(){
+	global $array_projects;
+	$match = $_GET['id'];
+	/* ——————————————————————————————————
+	DESCRIPTION:
+	——————————————————————————————————— */
+
+	foreach($array_projects as $id => $project){
+		if($match == $id){
+			if($project[interior_background] !== ''){
+				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_background].')center no-repeat;background-size:cover;"></div>';
+				}else{
+				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';	
+				}
+			// $output = $output . '<div class="section header_interior" data-parallax="scroll" data-image-src="_library/asset/_projects/'.$project[foldername].'/'.$project[cover].'"></div>'; 
+			}
+		}
+
+	/* ———————————————————————————————— */
+	return $output;}//close function
+	/* ———————————————————————————————— */
+	$_header_interior = header_interior();
+
+/* ————————————————————————————————————————————————————————— */
+
 function section_interior(){
 	global $array_projects;
 	global $loremipsum;
@@ -547,7 +550,11 @@ function section_interior(){
 								}
 						$output = $output . '</div>';
 						$output = $output . '<div class="body_content">';
-							$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;">';
+							if($project[cover]!==""){
+								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;">';	
+								}else{
+								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')center no-repeat;background-size:cover;">';
+								}
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_title">';
 								$output = $output . '<h1>'.$project[title].'</h1>';
@@ -555,29 +562,39 @@ function section_interior(){
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_bar"></div>';
 							$output = $output . '<div class="content_personal">';
-								$output = $output . '<p>'.$project[personal].'</p>';
+								$output = $output . '<p>'.$project[personal].'';
+								if($project[content][situation] !== ""){
+									if($_GET[display]!=="bg"){
+										$output = $output . ' <a href="project.php?id='.$id.'&display=bg">Read&nbsp;More +</a></p>';
+										}else{
+										$output = $output . ' <a href="project.php?id='.$id.'">Hide&nbsp;Description &ndash;</a></p>';
+										}
+									}
 							$output = $output . '</div>';
-							$output = $output . '<ul>';
-							foreach($project[content] as $type => $content){
-								$output = $output . '<li class="description_'.$type.'">';
-									$output = $output . '<h2>'.$type.'</h2>';
-									$output = $output . '<div></div>';
-									$output = $output . '<p>'.$content.'</p>';
-								$output = $output . '</li>';
-								}	
-							$output = $output . '</ul>';
+							if($_GET[display] == "bg"){
+								$output = $output . '<ul>';
+								foreach($project[content] as $type => $content){
+									$output = $output . '<li class="description_'.$type.'">';
+										$output = $output . '<h2>'.$type.'</h2>';
+										$output = $output . '<div></div>';
+										$output = $output . '<p>'.$content.'</p>';
+									$output = $output . '</li>';
+									}	
+								$output = $output . '</ul>';
+								}
 						$output = $output . '</div>'; // end body_content
 					$output = $output . '</div>'; // end interior_body
 					}
 				}
 		$output = $output . '</div>'; // end inner
-		$output = $output . '<div class="interior_video" style="background:black;height:100px;">';
+		$output = $output . '<div class="section interior_video" style="background:black;height:100px;">';
+			$output = $output . '<div class="inner">';
+			$output = $output . '</div>';
+		$output = $output . '</div>';
+		$output = $output . '<div class="section interior_photos" style="background:black;height:100px;">';
 			$output = $output . '<div class="inner"></div>';
 		$output = $output . '</div>';
-		$output = $output . '<div class="interior_photos" style="background:black;height:100px;">';
-			$output = $output . '<div class="inner"></div>';
-		$output = $output . '</div>';
-		$output = $output . '<div class="interior_closing" style="background:black;height:100px;">';
+		$output = $output . '<div class="section interior_closing" style="background:black;height:100px;">';
 			$output = $output . '<div class="inner"></div>';
 		$output = $output . '</div>';
 	$output = $output . '</div>'; // end section_interior
@@ -603,7 +620,7 @@ function section_footer(){
 			$output = $output . '<a href="/">Back to main</a>';
 			}
 	$output = $output . '</div>';
-	$output = $output . '<div class="section copyright"><p><span style="color:#665">&copy; '.date('Y').' Site designed by nin-yo.com. All Rights Reserved. Site created using pen on paper, InDesign CC, and <a href="github.com/ninyo" target="none" style="text-decoration:none;color:#665;font-weight:bold;">text files</a></span></p></div>';
+	$output = $output . '<div class="section copyright"><p><span style="color:#665">&copy; '.date('Y').' Site designed by nin-yo.com. All Rights Reserved. Site created using pen on paper, InDesign CC, Sublime Text, and <a href="http://github.com/ninyo" target="none" style="text-decoration:none;color:#665;font-weight:bold;">Github</a></span></p></div>';
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
