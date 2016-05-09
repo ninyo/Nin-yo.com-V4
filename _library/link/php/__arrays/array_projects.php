@@ -516,7 +516,7 @@ $array_projects[] = array(
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
-	"title"=>"Friends or Enemies B-boy Battle",// title will be displayed as h1
+	"title"=>"Friends or Enemies B&#8209boy Battle",// title will be displayed as h1
 	"subtitle"=>"Event Design",
 	"foldername"=>"friends-or-enemies-bboy-competition",
 	"hex"=>"f2a86f",

@@ -301,7 +301,7 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>Do visual design long enough, and it influences the way you view the world. My attention is drawn to well done design, and I'll usually make a mental note on why I liked it. Keeping attentive to trends at times reveal a stronger understanding of what's current and how you can apply them in the future.</p>";
+			$output = $output . "<p class='header_description'>Do anything long enough, and it influences the way you view the world; for me it's visual design. My attention is drawn to well done compositions, and it's something I appreciate noticing. Keeping attentive to good work at times reveal a stronger understanding of what's current in today's trends, and how it can influence you.</p>";
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -551,9 +551,9 @@ function section_interior(){
 						$output = $output . '</div>';
 						$output = $output . '<div class="body_content">';
 							if($project[cover]!==""){
-								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;">';	
+								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat #667;background-size:cover;">';	
 								}else{
-								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')center no-repeat;background-size:cover;">';
+								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')center no-repeat #667;background-size:cover;">';
 								}
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_title">';
