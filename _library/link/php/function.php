@@ -301,7 +301,7 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>Do anything long enough, and it influences the way you view the world; for me it's visual design. My attention is drawn to well done compositions, and it's something I appreciate noticing. Keeping attentive to good work at times reveal a stronger understanding of what's current in today's trends, and how it can influence you.</p>";
+			$output = $output . "<p class='header_description'>Do anything long enough, and it influences the way you view the world; for me it's visual design. My attention is drawn to well done compositions, and it's something I appreciate noticing. At times, keeping attentive to good work reveals a stronger understanding of what's current in today's trends and how it can influence you.</p>";
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -493,9 +493,9 @@ function header_interior(){
 	foreach($array_projects as $id => $project){
 		if($match == $id){
 			if($project[interior_background] !== ''){
-				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_background].')center no-repeat;background-size:cover;"></div>';
+				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_background].')center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';
 				}else{
-				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';	
+				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';	
 				}
 			// $output = $output . '<div class="section header_interior" data-parallax="scroll" data-image-src="_library/asset/_projects/'.$project[foldername].'/'.$project[cover].'"></div>'; 
 			}
@@ -550,24 +550,32 @@ function section_interior(){
 								}
 						$output = $output . '</div>';
 						$output = $output . '<div class="body_content">';
-							if($project[cover]!==""){
-								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat #667;background-size:cover;">';	
-								}else{
-								$output = $output . '<div class="content_avatar" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')center no-repeat #667;background-size:cover;">';
+							if($project[url]!==""){//that means it has something in there so follow it
+								if($project[interior_logo]!==""){//that means if interior logo is available
+									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')"><a href="'.$project[url].'" target="none" style="display:block;height:100%;width:100%;"></a>';
+									}else{
+									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')"><a href="'.$project[url].'" target="none" style="display:block;height:100%;width:100%;"></a>';	
+									}
+								}else{//otherwise don't place anchor tag
+								if($project[interior_logo]!==""){//that means if interior logo is available
+									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')">';
+									}else{
+									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')">';		
+									}
 								}
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_title">';
-								$output = $output . '<h1>'.$project[title].'</h1>';
-								$output = $output . '<p>'.$project[subtitle].'</p>';
+								$output = $output . '<h1>'.$project[subtitle].'</h1>';
+								$output = $output . '<p>'.$project[location].'</p>';
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_bar"></div>';
 							$output = $output . '<div class="content_personal">';
 								$output = $output . '<p>'.$project[personal].'';
 								if($project[content][situation] !== ""){
 									if($_GET[display]!=="bg"){
-										$output = $output . ' <a href="project.php?id='.$id.'&display=bg">Read&nbsp;More +</a></p>';
+										$output = $output . ' <a href="project.php?id='.$id.'&display=bg">Read&nbsp;More&nbsp;+</a></p>';
 										}else{
-										$output = $output . ' <a href="project.php?id='.$id.'">Hide&nbsp;Description &ndash;</a></p>';
+										$output = $output . ' <a href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
 										}
 									}
 							$output = $output . '</div>';
@@ -587,15 +595,20 @@ function section_interior(){
 					}
 				}
 		$output = $output . '</div>'; // end inner
-		$output = $output . '<div class="section interior_video" style="background:black;height:100px;">';
-			$output = $output . '<div class="inner">';
-			$output = $output . '</div>';
-		$output = $output . '</div>';
 		$output = $output . '<div class="section interior_photos" style="background:black;height:100px;">';
-			$output = $output . '<div class="inner"></div>';
-		$output = $output . '</div>';
-		$output = $output . '<div class="section interior_closing" style="background:black;height:100px;">';
-			$output = $output . '<div class="inner"></div>';
+			$output = $output . '<div class="inner">';
+				$output = $output . '<ul>';
+					foreach($array_projects as $id => $project){
+						if($match == $id){
+							foreach($project[photos] as $photo){
+								if($photo!==""){
+									$output = $output . '<li style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.')center no-repeat; background-size:cover; display:inline-block; width:100px;height:100px"></li>';
+									}
+								}
+							}
+						}
+				$output = $output . '</ul>';
+			$output = $output . '</div>';
 		$output = $output . '</div>';
 	$output = $output . '</div>'; // end section_interior
 

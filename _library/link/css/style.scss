@@ -1379,7 +1379,10 @@ li.cs {background-position-x: -199px !important}
 					@include vp('transition','.5s');
 					@include vp('border-radius','2px');
 					display:inline-block;
-					background-color:black;
+					background-color:$color_black;
+					background-repeat:no-repeat;
+					background-position:center;
+					background-size:cover;
 					width:140px;height:140px;
 					margin-top: -153px;
 					@media screen and (min-width: $tablet_body) {
@@ -1532,5 +1535,4 @@ li.cs {background-position-x: -199px !important}
 			}
 		}
 	}
-
 
