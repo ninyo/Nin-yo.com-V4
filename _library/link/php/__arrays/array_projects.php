@@ -121,7 +121,7 @@ $array_projects[] = array(
 		"experience" => "Administrators monitor thousands of submissions from the community from a complex database, and clients spend their time reviewing hundreds of thousands of community submissions for their live projects. The experience from the client workflow was designed to setup a new project with Zooppa, as well as a reward system was also designed for choosing the winning users with real money.",
 		),
 	"badge"=>array('id','vd'),
-	"photos"=>array(""),
+	"photos"=>array(),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
@@ -156,9 +156,9 @@ $array_projects[] = array(
 		"capsul_user_experience_1.jpg",
 		"capsul_user_experience_2.jpg",
 		"gif_capsul1.gif",
+		"gif_capsul2.gif",
 		"capsul_user_experience_3.jpg",
 		"capsul_user_experience_4.jpg",
-		"gif_capsul2.gif",
 		"capsul_user_experience_5.jpg",
 		"capsul_user_experience_6.jpg",
 		"gif_capsul3.gif",
@@ -428,7 +428,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"ea312c",
-	"personal"=>"Imagine designing a wakescreen for horizontal, vertical, and square compositions. After approval, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets.",
+	"personal"=>"Designed wakescreen covers for horizontal, vertical, and square compositions. Once approved, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files (each) compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets.",
 	"interior_background"=>"IMG_2704.jpg",
 	"interior_logo"=>"kind.png",
 	"cover"=>"w-amazon-wildlife.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}

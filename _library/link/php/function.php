@@ -573,14 +573,14 @@ function section_interior(){
 								$output = $output . '<p>'.$project[personal].'';
 								if($project[content][situation] !== ""){
 									if($_GET[display]!=="bg"){
-										$output = $output . ' <a href="project.php?id='.$id.'&display=bg">Read&nbsp;More&nbsp;+</a></p>';
+										$output = $output . ' <a class="linker" href="project.php?id='.$id.'&display=bg">Read&nbsp;More&nbsp;+</a></p>';
 										}else{
-										$output = $output . ' <a href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
+										$output = $output . ' <a class="linker" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
 										}
 									}
 							$output = $output . '</div>';
 							if($_GET[display] == "bg"){
-								$output = $output . '<ul>';
+								$output = $output . '<ul class="study">';
 								foreach($project[content] as $type => $content){
 									$output = $output . '<li class="description_'.$type.'">';
 										$output = $output . '<h2>'.$type.'</h2>';
@@ -589,27 +589,44 @@ function section_interior(){
 									$output = $output . '</li>';
 									}	
 								$output = $output . '</ul>';
+								$output = $output . ' <a style="margin-bottom:40px; display:block; padding:20px 0; border-bottom:2px solid black; border-top:2px solid black;" class="linker" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
 								}
+							/*————————————————————————————*/
+							if(count($project[photos]) == 1){
+								$output = $output . '<ul class="grid_1_1_1">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 2){
+								$output = $output . '<ul class="grid_2_2_2">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 3){
+								$output = $output . '<ul class="grid_1_3_3">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 4 || count($project[photos]) == 8 || count($project[photos]) == 10){
+								$output = $output . '<ul class="grid_2_2_2">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 5){
+								$output = $output . '<ul class="grid_1_2_3">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 6 || count($project[photos]) == 9){
+								$output = $output . '<ul class="grid_2_3_3">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								elseif(count($project[photos]) == 7 || count($project[photos]) == 11 || count($project[photos]) == 12){
+								$output = $output . '<ul class="grid_3_3_4">';
+									foreach($project[photos] as $photo){$output = $output . '<li style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.');"></li>';}
+								}
+								/*————————————————————————————*/
+								$output = $output . '</ul>';
 						$output = $output . '</div>'; // end body_content
 					$output = $output . '</div>'; // end interior_body
 					}
 				}
 		$output = $output . '</div>'; // end inner
-		$output = $output . '<div class="section interior_photos" style="background:black;height:100px;">';
-			$output = $output . '<div class="inner">';
-				$output = $output . '<ul>';
-					foreach($array_projects as $id => $project){
-						if($match == $id){
-							foreach($project[photos] as $photo){
-								if($photo!==""){
-									$output = $output . '<li style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$photo.')center no-repeat; background-size:cover; display:inline-block; width:100px;height:100px"></li>';
-									}
-								}
-							}
-						}
-				$output = $output . '</ul>';
-			$output = $output . '</div>';
-		$output = $output . '</div>';
 	$output = $output . '</div>'; // end section_interior
 
 

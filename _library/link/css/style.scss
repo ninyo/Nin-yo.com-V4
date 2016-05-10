@@ -1425,16 +1425,18 @@ li.cs {background-position-x: -199px !important}
 						font-weight: 400;
 						margin-bottom:0;
 						@media screen and (min-width: $tablet_body) {margin-bottom: 40px;}
-						a {
-							@include use_noto;
-							text-transform: uppercase;
-						    font-size: 13px;
-						    font-weight: 500;
-						    color:$color_brand_secondary;
-							}
+						
 						}
 					}
-				ul {
+				a {
+					@include use_noto;
+					text-transform: uppercase;
+				    font-size: 13px;
+				    font-weight: 500;
+				    color:$color_brand_secondary;
+					}
+				ul.study {
+					margin-bottom:40px;
 					@include clearfix;
 					@media screen and (min-width: $tablet_body) {
 					 	text-align:left;
