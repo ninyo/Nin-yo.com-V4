@@ -2,7 +2,6 @@
 /* ———————————— BRAND COLORS/SETUP ———————————— */
 //////////////////////////////////////////////////
 
-/*—————*///DESIGNER COLOR
 $color_ninyo: #2d9ad2;
 
 /*—————*///BRAND COLORS
@@ -18,37 +17,22 @@ $color_black: #161a1d;
 $color_darkwhite: #edeae3;
 $color_offwhite: #fafafa;
 
-/*—————*///TYPOGRAPHY COLORS
-$color_h1_onlight: $color_shade;
-$color_h1_ondark: $color_brand_primary;
-$color_p_onlight: $color_shade;
-$color_p_ondark: $color_white;
-
 /*—————*///COPYRIGHT SECTION COLORS
 $bg_copyright: $color_shade;
 $color_copyright: $color_brand_primary;
 
 
 //////////////////////////////////////////////////
-/* ———————————————— TYPOGRAPHY ———————————————— */
+/* —————————————— INSTALL FONTS ——————————————— */
 //////////////////////////////////////////////////
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-
-@mixin use_noto { // used for body copy
-	font-family: 'Noto Sans Japanese', sans-serif;
-	}	
-
-@mixin use_fira { // used for italics
-	font-family: 'Fira Sans', sans-serif;
-	}
-
-@mixin use_lato { // used for header and subhead copy
-	font-family: 'Lato', sans-serif;
-	}
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); // used for noto
+@mixin use_noto {font-family: 'Noto Sans Japanese', sans-serif} // used for body copy
+@mixin use_fira {font-family: 'Fira Sans', sans-serif} // used for italics
+@mixin use_lato {font-family: 'Lato', sans-serif} // used for header and subhead copy
 
 //////////////////////////////////////////////////
-/* —————————————————— GLOBAL —————————————————— */
+/* —————————————— INITIAL GLOBAL —————————————— */
 //////////////////////////////////////////////////
 
 $tablet_body: 760px;
@@ -67,8 +51,7 @@ $desktop_body: 1440px;
 		padding-top:60px;
 		padding-bottom:100px;
 		}
-	}
-.section {@include section;}
+	}.section {@include section}
 
 @mixin inner { // inner contains contents inside section using dynamic margins dependant on viewport width
 	margin:0 auto;
@@ -77,15 +60,14 @@ $desktop_body: 1440px;
 	@media screen and (min-width: $tablet_body) {width:84.473684210526%;} // 760px viewport width using 642px body using 59px left & right margins
 	@media screen and (min-width: $laptop_body) {width:83.333333333333%;} // 1440px viewport width using 1200px body using 120px left & right margins
 	@media screen and (min-width: $desktop_body) {width:1440px;}
-	}.inner {@include inner;}
+	}.inner {@include inner}
 
 @mixin inner_block { // inner_block is used to make small amount of text create more lines than one
 	margin:0 auto;
 	width:93.066666666667%; // 375px viewport width using 345px body using 15px left & right margins
 	@media screen and (min-width: $tablet_body) {width:75%;} // 760px viewport width using 642px body using 59px left & right margins
 	@media screen and (min-width: $laptop_body) {width:60%;} // 1440px viewport width using 1200px body using 120px left & right margins
-	}
-.inner_block {@include inner_block;}
+	}.inner_block {@include inner_block}
 
 @mixin vertical_center {
 	&:before {
@@ -96,6 +78,11 @@ $desktop_body: 1440px;
 		}
 	}
 
+@mixin vertical_center_target { // place this inside the target. the parent must 
+	display:inline-block;
+	vertical-align: middle;
+	}
+
 @mixin header_main {
 	text-align:center;
 	background-size:cover;
@@ -103,7 +90,7 @@ $desktop_body: 1440px;
 	background-position:center;
 	height:100vh;
 	@include vertical_center;
-	}.header_main {@include header_main;}
+	}.header_main {@include header_main}
 
 @mixin header_short { // if header, then place inside .section wrapper
 	display:block;
@@ -114,26 +101,12 @@ $desktop_body: 1440px;
 	@include vertical_center;
 	@media screen and (min-width: $tablet_body) {height:200px;}
 	@media screen and (min-width: $laptop_body) {height:260px;}
-	}
-
-.header_short {@include header_short}
-
-.text_appear { // if mobile, then text is hidden. text will appear on tablet, and desktop
-	display:none;
-	@media screen and (min-width: $tablet_body) {display:inline-block;}
-	@media screen and (min-width: $laptop_body) {display:inline-block;}
-	}
+	}.header_short {@include header_short}
 
 p.bottom {
 	margin-bottom:40px;
 	@media screen and (min-width: $tablet_body) {margin-bottom:40px;}
 	@media screen and (min-width: $laptop_body) {margin-bottom:40px;}
-	}
-
-.group_center {
-	display:inline-block;
-	text-align:center;
-	vertical-align: middle;
 	}
 
 .list_center {
@@ -1208,7 +1181,7 @@ li.cs {background-position-x: -199px !important}
 						&:nth-child(3n+3){margin-right:0;}
 						.score_amount {
 							@include use_lato;
-							font-weight:500;
+							font-weight:600;
 							margin-bottom: 10px;
 							font-size:41px;
 							color:$color_black;
@@ -1435,12 +1408,21 @@ li.cs {background-position-x: -199px !important}
 						
 						}
 					}
-				a {
+				a.linker_top {
+					display:block;
 					@include use_noto;
 					text-transform: uppercase;
 				    font-size: 13px;
 				    font-weight: 500;
 				    color:$color_brand_secondary;
+					}
+				a.linker_bottom {
+					@extend a.linker_top;
+					margin-bottom:40px; 
+					display:block; 
+					padding:20px 0; 
+					border-bottom:2px solid black; 
+					border-top:2px dotted black;
 					}
 				ul.study {
 					margin-bottom:40px;

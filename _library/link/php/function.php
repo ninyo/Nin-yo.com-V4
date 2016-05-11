@@ -4,19 +4,11 @@
 
 global functions to help control output
 
-———————————————————————————————————————————————————————————— */
-
-/* ————————————————————————————————————————————————————————————
 //////////////////////////// NOTES ////////////////////////////
 
 Nonbreaking Hyphen = &#8209;
-Ugly Apostraphe = ’; //find all and replace with '
 
-Replace all words
-Projects -> Work
 ———————————————————————————————————————————————————————————— */
-
-
 
 /* ————————————————————————————————————————————————————————— */
 //////////////////////////// TEXT /////////////////////////////
@@ -25,11 +17,9 @@ Projects -> Work
 $loremipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 $introduce = "Ninyo Aganon";
 $position = "Interaction + Visual Designer";
-// $description = "I've worked as a visual designer for numerous non-profit projects within Seattle's International District, and for recognizable names such as: T&#8209;Mobile, University&nbsp;of&nbsp;Washington, Starbucks, and Amazon to name a few.";
-$traits = "I enjoy the little details: just the right amount of leading, understanding the re-orientation of objects within a responsive composition, multiple-layer hover states, faded color, and handcrafted details";
 
 /* ————————————————————————————————————————————————————————— */
-////////////// HAND CRAFTED FUNCTIONS FOR REUSE ///////////////
+//////////////////// FUNCTIONS FOR REUSE //////////////////////
 /* ————————————————————————————————————————————————————————— */
 
 function titlecase($string, $delimiters = array(" ", "-", "O'"), $exceptions = array("to", "a", "the", "of", "by", "for", "and", "with", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X")) { 
@@ -95,11 +85,11 @@ function clipboard_container_grid(){
 	$total = count($array_projects) -1;
 	/* ——————————————————————————————————
 	DESCRIPTION: 
-	The purpose with this is to switch out the grid class dependant on how many photos are stashed inside of
-	the url_after container. if it contains a certain amount, the grid will change to fit the section width without
-	leaving a hanging photo on its own, except if there are 5 in the container.
+	this switches out the grid class dependant on how many photos are stashed inside of the array.
+	if the container counts a certain amount, the grid will change to fit the section width without
+	leaving a hanging photo on its own, except if there is a certain odd number 5 within the container.
 	——————————————————————————————————— */
-	// $output = $output . '<ul class="grid_1_1_1"><li></li></ul>';
+	// $output = $output . '<ul class="grid__1_1"><li></li></ul>';
 	foreach($array_projects as $id => $project){
 		if($id == $match){
 			if($_GET['display'] !== 'before'){
@@ -202,39 +192,8 @@ function clipboard_container_grid(){
 
 /* ————————————————————————————————————————————————————————— */
 
-function component_li_portfolio_piece(){
-	/* ——————————————————————————————————
-	DESCRIPTION: these are the list items that will be loopped.
-	——————————————————————————————————— */
-
-	
-
-	/* ———————————————————————————————— */
-	return $output;}//close function
-	/* ———————————————————————————————— */
-	$_component_li_portfolio_piece = component_li_portfolio_piece();
-
-/* ————————————————————————————————————————————————————————— */
-
-function component_unlock(){
-	/* ———————————————————————————————— */
-	return $output;}//close function
-	/* ———————————————————————————————— */
-	$_component_unlock = component_unlock();
-
-/* ————————————————————————————————————————————————————————— */
-
-function component_scorecard(){
-	/* ———————————————————————————————— */
-	return $output;}//close function
-	/* ———————————————————————————————— */
-	$_component_scorecard = component_scorecard();
-
-/* ————————————————————————————————————————————————————————— */
-
 function component_social_bar(){
 	$array_social = array();
-
 	$array_social[instagram] = array(
 		"url" => "http://instagram.com/",
 		"username" => "ninyoaganon",
@@ -263,7 +222,6 @@ function component_social_bar(){
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
-
 	$output = $output . '<ul style="position:relative;">';
 		foreach($array_social as $network => $details){
 			$output = $output . '<li class="'.$network.'">';
@@ -272,7 +230,6 @@ function component_social_bar(){
 			$output = $output . '</li>';
 			}
 	$output = $output . '</ul>';
-
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -292,6 +249,10 @@ function header_main(){
 	global $introduce;
 	global $position;
 	global $description;
+
+	$array_toptext[] = array(
+		"Spend time on anything long enough, and it influences the lens that you view your world through&mdash;for me it's visual design. I'm drawn to well created compositions, and it's something I appreciate noticing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
+		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
@@ -301,12 +262,20 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>Do anything long enough, and it influences the way you view the world; for me it's visual design. My attention is drawn to well done compositions, and it's something I appreciate noticing. At times, keeping attentive to good work reveals a stronger understanding of what's current in today's trends and how it can influence you.</p>";
+			$count = 0;
+			foreach($array_toptext as $toptext){
+				shuffle($toptext);
+				foreach($toptext as $text){
+					$count = $count +1;
+					if($count == 1){
+						$output = $output . "<p class='header_description'>".$text."</p>";
+						}
+					}
+				}
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
 	$output = $output . '</div>';
-	
 	/* ———————————————————————————————— */
 	return $output;}//close function 
 	/* ———————————————————————————————— */
@@ -319,19 +288,9 @@ function section_divide(){
 	/* ——————————————————————————————————
 	DESCRIPTION: this shit was cool. i got to add a 5 second loop of a gif background.
 	——————————————————————————————————— */
-
-	// $output = $output . '<div class="section section_divide" data-parallax="scroll" data-image-src="_library/asset/img_header.png"><div class="inner">';
-	// 	$output = $output . '<div class="container_line_recent">';
-	// 		$output = $output . '<div class="line_above"></div>';
-	// 		$output = $output . '<div class="gfx_recent"></div>';
-	// 		$output = $output . '<div class="line_below"></div>';
-	// 	$output = $output . '</div>';
-	// $output = $output . '</div></div>';
-
 	$output = $output . '<div class="section section_divide" data-parallax="scroll" data-image-src="_library/asset/img_header.png"><div class="inner">';
 		$output = $output . '<p style="color:white">Below are 24 projects that I\'ve decided to share.</p>';
 	$output = $output . '</div></div>';
-
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -436,8 +395,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the vibrant culture of Hip&#8209hop through its artform of dance and graffiti. This cultivated my passion for creativity, which brought me to where I am today.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design gave foundation to my work, while personally having a multi&#8209disciplinary standpoint through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced with my friends by the vibrant culture of Hip&#8209hop through its artform of dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>This field of visual design gave foundation to my work, while personally having a multi&#8209disciplinary background through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
@@ -489,13 +448,11 @@ function header_interior(){
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
-
 	foreach($array_projects as $id => $project){
 		if($match == $id){
 			$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/_bg.png)center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';
 			}
 		}
-
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */
@@ -560,9 +517,9 @@ function section_interior(){
 								$output = $output . '<p>'.$project[personal].'';
 								if($project[content][situation] !== ""){
 									if($_GET[display]!=="bg"){
-										$output = $output . ' <a class="linker" href="project.php?id='.$id.'&display=bg">Read&nbsp;More&nbsp;+</a></p>';
+										$output = $output . ' <a class="linker_top" href="project.php?id='.$id.'&display=bg">More&nbsp;+</a></p>';
 										}else{
-										$output = $output . ' <a class="linker" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
+										$output = $output . ' <a class="linker_top" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
 										}
 									}
 							$output = $output . '</div>';
@@ -576,7 +533,7 @@ function section_interior(){
 									$output = $output . '</li>';
 									}	
 								$output = $output . '</ul>';
-								$output = $output . ' <a style="margin-bottom:40px; display:block; padding:20px 0; border-bottom:2px solid black; border-top:2px solid black;" class="linker" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
+								$output = $output . ' <a class="linker_bottom" href="project.php?id='.$id.'">Hide&nbsp;Description&nbsp;&ndash;</a></p>';
 								}
 							/*————————————————————————————*/
 							if(count($project[photos]) == 1){
@@ -629,7 +586,6 @@ function section_footer(){
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
-
 	$output = $output . '<div class="section footer">';
 		if($headtitle == 'main'){
 			$output = $output . '<a>Thank You</a>';

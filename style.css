@@ -3,11 +3,9 @@
 /*—————*/
 /*—————*/
 /*—————*/
-/*—————*/
-/*—————*/
-/* ———————————————— TYPOGRAPHY ———————————————— */
+/* —————————————— INSTALL FONTS ——————————————— */
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-/* —————————————————— GLOBAL —————————————————— */
+/* —————————————— INITIAL GLOBAL —————————————— */
 .section {
   width: 100%;
   padding-top: 50px;
@@ -75,15 +73,6 @@
     .header_short {
       height: 260px; } }
 
-.text_appear {
-  display: none; }
-  @media screen and (min-width: 760px) {
-    .text_appear {
-      display: inline-block; } }
-  @media screen and (min-width: 1080px) {
-    .text_appear {
-      display: inline-block; } }
-
 p.bottom {
   margin-bottom: 40px; }
   @media screen and (min-width: 760px) {
@@ -92,11 +81,6 @@ p.bottom {
   @media screen and (min-width: 1080px) {
     p.bottom {
       margin-bottom: 40px; } }
-
-.group_center {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle; }
 
 .list_center {
   border-top: 1px solid #cccccc;
@@ -1257,7 +1241,7 @@ li.cs {
             margin-right: 0; }
           .about .about_below .inner .content_scorecard ul .section_score_type .score_amount {
             font-family: 'Lato', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 10px;
             font-size: 41px;
             color: #161a1d; }
@@ -1524,12 +1508,19 @@ li.cs {
         .section_interior .inner .interior_body .body_content .content_personal p {
           font-weight: 400;
           margin-bottom: 40px; }
-        .section_interior .inner .interior_body .body_content a {
+        .section_interior .inner .interior_body .body_content a.linker_top, .section_interior .inner .interior_body .body_content a.linker_bottom {
+          display: block;
           font-family: 'Noto Sans Japanese', sans-serif;
           text-transform: uppercase;
           font-size: 13px;
           font-weight: 500;
           color: #b08838; }
+        .section_interior .inner .interior_body .body_content a.linker_bottom {
+          margin-bottom: 40px;
+          display: block;
+          padding: 20px 0;
+          border-bottom: 2px solid black;
+          border-top: 2px dotted black; }
         .section_interior .inner .interior_body .body_content ul.study {
           margin-bottom: 40px; }
           .section_interior .inner .interior_body .body_content ul.study:after {
