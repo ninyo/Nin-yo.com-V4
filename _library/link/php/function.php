@@ -422,8 +422,8 @@ function section_about(){
 	$output = $output . '<div class="section about">';
 		$output = $output . '<div class="about_upper">';
 			$output = $output . '<div class="inner">';
-				$output = $output . '<div class="email">EMAIL</div>';
-				$output = $output . '<div class="resume">RESUME</div>';
+				$output = $output . '<div class="email"><a style="color:white;display:block;width:100%;height:100%;" href="mailto:mail@nin-yo.com">EMAIL</a></div>';
+				$output = $output . '<div class="resume"><a style="color:white;display:block;width:100%;height:100%;" href="_library/download/resume_ninyo.pdf">RESUME</a></div>';
 			$output = $output . '</div>';
 		$output = $output . '</div>';
 		$output = $output . '<div class="section_bar" style="height:5px;width:100%;background-color:black;"></div>';
@@ -436,8 +436,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the culture of Hip&#8209hop through its artform of dance (formulating ideas) and graffiti (typographic experiments). This cultivated my strive for creative thought, which brought me to where I belong today.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design gave foundation to my work, while being multi&#8209disciplinary from a personal standpoint through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced by the vibrant culture of Hip&#8209hop through its artform of dance and graffiti. This cultivated my passion for creativity, which brought me to where I am today.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>The field of visual design gave foundation to my work, while personally having a multi&#8209disciplinary standpoint through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
@@ -492,12 +492,7 @@ function header_interior(){
 
 	foreach($array_projects as $id => $project){
 		if($match == $id){
-			if($project[interior_background] !== ''){
-				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_background].')center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';
-				}else{
-				$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';	
-				}
-			// $output = $output . '<div class="section header_interior" data-parallax="scroll" data-image-src="_library/asset/_projects/'.$project[foldername].'/'.$project[cover].'"></div>'; 
+			$output = $output . '<div class="section header_interior" style="background:url(_library/asset/_projects/'.$project[foldername].'/_bg.png)center no-repeat;background-size:cover;"><a href="/" style="display:block;height:100%;width:100%;"></a></div>';
 			}
 		}
 
@@ -551,17 +546,9 @@ function section_interior(){
 						$output = $output . '</div>';
 						$output = $output . '<div class="body_content">';
 							if($project[url]!==""){//that means it has something in there so follow it
-								if($project[interior_logo]!==""){//that means if interior logo is available
-									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')"><a href="'.$project[url].'" target="none" style="display:block;height:100%;width:100%;"></a>';
-									}else{
-									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')"><a href="'.$project[url].'" target="none" style="display:block;height:100%;width:100%;"></a>';	
-									}
-								}else{//otherwise don't place anchor tag
-								if($project[interior_logo]!==""){//that means if interior logo is available
-									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[interior_logo].')">';
-									}else{
-									$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')">';		
-									}
+								$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/_logo.png)"><a href="'.$project[url].'" target="none" style="display:block;height:100%;width:100%;"></a>';
+								}else{
+								$output = $output . '<div class="content_avatar" style="background-image:url(_library/asset/_projects/'.$project[foldername].'/_logo.png)">';		
 								}
 							$output = $output . '</div>';
 							$output = $output . '<div class="content_title">';

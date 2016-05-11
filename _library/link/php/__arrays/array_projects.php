@@ -29,13 +29,11 @@ $array_projects[] = array(
 	"subtitle"=>"Crew Logo",
 	"foldername"=>"boogie-down-bremerton",
 	"url"=>"",
-	"video"=>"",
+	"video"=>"https://vimeo.com/150865707",
 	"demo"=>"",
 	"hex"=>"525b55",
 	"personal"=>"The logo turned out to be my favorite, because of its simplicity of intertwining letters.",
-	"interior_background"=>"IMG_7013.jpg",
-	"interior_logo"=>"bdb.png",
-	"cover"=>"tn-bdbseal.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
 	"skills"=>array('logo design','videography',),
 	"client"=>array( // $info => $detail
@@ -49,9 +47,9 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"IMG_7938.jpg",
-		"w-bdbseal-logo-2_copy.png",
-		"work.jpg",
+		"bdb-coaster.png",
+		"bdb-logoanimation.gif",
+		"bdb-desk.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -64,13 +62,11 @@ $array_projects[] = array(
 	"subtitle"=>"Rebranding & Web",
 	"foldername"=>"rmco-rebrand",
 	"url"=>"http://rmco.us",
-	"video"=>"",
+	"video"=>"https://vimeo.com/162911217",
 	"demo"=>"",
 	"hex"=>"bf3423",
-	"personal"=>"This intentse project dealt with providing: product videos, team photos, responsive web design, prototyping, mobile-first approach, web development, branding, etc. It represents the type of work that I'd like to focus my capabilities on.",
-	"interior_background"=>"bg_motorcyles_copy.jpg",
-	"interior_logo"=>"rmco.png",
-	"cover"=>"bg_motorcyles.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"personal"=>"This intense project dealt with providing: product videos, team photos, responsive web design, prototyping, mobile-first approach, web development, branding, etc. It represents the type of work that I'd like to focus my capabilities on.",
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
 	"skills"=>array('logo design','sitemap','wireframing','prototyping','web design','videography','photography','front-end web development','php loops','php functions','html5','css3','sass','sass stylesheets','responsive design','mobile first approach','indesign','photoshop cc','illustrator cc','premiere cc','sublime text'),
 	"client"=>array( // $info => $detail
@@ -84,12 +80,12 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','id','fed','vd','cs'),
 	"photos"=>array(
-		"112032.png",
-		"2290.jpg",
-		"rmco.gif",
-		"rmco2.gif",
-		"2294.jpg",
-		"2623.jpg",
+		"rmco-beanie.png",
+		"rmco-member.gif",
+		"rmco-merchandise.png",
+		"rmco-motorcyclepage.gif",
+		"rmco-shot.png",
+		"rmco-stickers.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -106,9 +102,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"4e90e0",
 	"personal"=>"This represents the kind of work that I want to spend most of my time on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
-	"interior_background"=>"321792632.jpg",
-	"interior_logo"=>"zoop.png",
-	"cover"=>"tab_comments.gif", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.gif", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
 	"skills"=>array('sitemap','wireframing','prototyping','web design','indesign','photoshop cc','icon design','badge design','interaction design'),
 	"client"=>array( // $info => $detail
@@ -121,7 +115,11 @@ $array_projects[] = array(
 		"experience" => "Administrators monitor thousands of submissions from the community from a complex database, and clients spend their time reviewing hundreds of thousands of community submissions for their live projects. The experience from the client workflow was designed to setup a new project with Zooppa, as well as a reward system was also designed for choosing the winning users with real money.",
 		),
 	"badge"=>array('id','vd'),
-	"photos"=>array(),
+	"photos"=>array(
+		"zooppa-internalheader.gif",
+		"zooppa-clientplatform.gif",
+		"zooppa-internalinterface.gif",
+		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
@@ -137,9 +135,7 @@ $array_projects[] = array(
 	"demo"=>"https://invis.io/834XLIOBW",
 	"hex"=>"de6d6c",
 	"personal"=>"Working on this piece at General Assembly allowed me to understand the process of a User Experience designer and how their workflow benefits the user and their overall experience.",
-	"interior_background"=>"capsul.jpg",
-	"interior_logo"=>"capsul.png",
-	"cover"=>"w-capsul-01.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (South Lake Union)", // this will be displayed above h1
 	"skills"=>array('presentation design','logo design','sitemap','wireframing','prototyping','web design','user research','user flow','persona development','storyboarding','indesign','Photoshop cc','illustrator cc','aftereffects cc','premier pro cc','interaction design','content development','user analysis','competitive analysis','user interviews','requirements','scrum workflow','sketching','user testing'),
 	"client"=>array( // $info => $detail
@@ -153,15 +149,15 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','id','ur','vd','cs'),
 	"photos"=>array(
-		"capsul_user_experience_1.jpg",
-		"capsul_user_experience_2.jpg",
-		"gif_capsul1.gif",
-		"gif_capsul2.gif",
-		"capsul_user_experience_3.jpg",
-		"capsul_user_experience_4.jpg",
-		"capsul_user_experience_5.jpg",
-		"capsul_user_experience_6.jpg",
-		"gif_capsul3.gif",
+		"capsul-choosetime.gif",
+		"capsul-decisionpath.png",
+		"capsul-messagereview.gif",
+		"capsul-storyboard1.png",
+		"capsul-userpath.png",
+		"capsul-storyboard2.png",
+		"capsul-userpersonas.png",
+		"capsul-intro.gif",
+		"capsul-wireflow.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -179,9 +175,7 @@ $array_projects[] = array(
 	"hex"=>"3e51e7",
 	// "personal"=>"I was able to actually see people having a good time using these pieces live from instagram by typing in #thankyourunning. No one really thinks about who is involved with creating these things behind the scenes, but that's kind of the fun part.",
 	"personal"=>"I was able to see people smiling and having a good time receiving these pieces from instagram by typing in #thankyourunning. It helps to see what kind of impact your work is placing onto people you're designing for.",	
-	"interior_background"=>"",
-	"interior_logo"=>"brook.png",
-	"cover"=>"w-thankyourunning-01.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Fremont)", // this will be displayed above h1
 	"skills"=>array('layout design','kit design','print design','indesign','Photoshop cc','medallion design','prop design'),
 	"client"=>array( // $info => $detail
@@ -195,13 +189,12 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"thankyourunning-01.png",
-		"thankyourunning-02.png",
-		"thankyourunning-03.png",
-		"thankyourunning-04.png",
-		"thankyourunning-05.png",
-		"thankyourunning-06.png",
-		"thankyourunning-07.png",
+		"tyr-board.png",
+		"tyr-hangart.png",
+		"tyr-medalion.png",
+		"tyr-medlionspecial.png",
+		"tyr-onsite.png",
+		"tyr-shoeholder.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -218,9 +211,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"b2b3ac",
 	"personal"=>"It's very interesting seeing how much work local leaders have contributed for their community. I felt grateful being able to learn and work on a history book that will be read and used by thousands of readers as an actual history piece.",
-	"interior_background"=>"IMG_9475.jpg",
-	"interior_logo"=>"hh.png",
-	"cover"=>"w_0020.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
 	"skills"=>array('layout design','Cover design','Photo retouching'),
 	"client"=>array( // $info => $detail
@@ -234,7 +225,7 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"w_0020_copy.png",
+		"hh-book.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -251,9 +242,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"c26a49",
 	"personal"=>"Working on this actually tested me on how fast I can develop a site at a minimal viable product approach from the ground up.",
-	"interior_background"=>"154541456.jpg",
-	"interior_logo"=>"milbro.png",
-	"cover"=>"3933.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
 	"skills"=>array('web design','HTML','PHP','CSS','sass','logo design','Business card design','email design','Photo retouching','minimal viable product approach',),
 	"client"=>array( // $info => $detail
@@ -267,9 +256,9 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','id','fed','vd','cs'),
 	"photos"=>array(
-		"w-milbro-01.png",
-		"w-motion-milbro.gif",
-		"gif_milbro.gif",
+		"milbro-card.gif",
+		"milbro-landing.gif",
+		"milbro-card.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -282,14 +271,12 @@ $array_projects[] = array(
 	"subtitle"=>"Mailer Kit",
 	"foldername"=>"revolution-marketing-mailer",
 	"url"=>"",
-	"video"=>"",
+	"video"=>"https://vimeo.com/87938757",
 	"demo"=>"",
 	"hex"=>"f62751",
 	// "personal"=>"I was able to spend the time creating a piece that utilizes all my skills from: designing, printing, mocking up, photography, creating dicuts, and actually using machines to create these pieces. It also taught me how to set up a step and repeat to be able to cut using math on a guillotine cutting machine.",
 	"personal"=>"I was able to create a piece that utilizes all my hands-on skills from: designing for print, mocking up, photography, creating dicuts, and actually using machines to help visualize final pieces. This work taught me important techniques that I still use today, even within a digital space.",
-	"interior_background"=>"",
-	"interior_logo"=>"rev.png",
-	"cover"=>"web_portfolio_510.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
 	"skills"=>array('Cover design','booklet design','box design','dicut design','print design','mock up','guillotine mock up','typography','art direction'),
 	"client"=>array( // $info => $detail
@@ -303,13 +290,12 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','vd','cs'),
 	"photos"=>array(
-		"w-revmailer-01.png",
-		"w-revmailer-02.png",
-		"w-revmailer-03.png",
-		"w-revmailer-04.png",
-		"w-revmailer-05.png",
-		"w-revmailer-06.png",
-		"w-revmailer-07.png",
+		"revolution-01.png",
+		"revolution-02.png",
+		"revolution-03.png",
+		"revolution-04.png",
+		"revolution-05.png",
+		"revolution-06.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -327,9 +313,7 @@ $array_projects[] = array(
 	"hex"=>"d66d2a",
 	// "personal"=>"This project dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. This project was the funnest to work on, as well allowing me to design within no boundaries.",
 	"personal"=>"This work dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. I had a great time working with these guys, as well as allowing me to design within no boundaries.",
-	"interior_background"=>"180430088.jpg",
-	"interior_logo"=>"zoop.png",
-	"cover"=>"community_profilepage.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
 	"skills"=>array('sitemap','wireframing','prototyping','web design','indesign','photoshop cc','icon design','badge design','interaction design'),
 	"client"=>array( // $info => $detail
@@ -343,9 +327,10 @@ $array_projects[] = array(
 		),
 	"badge"=>array('id','vd'),
 	"photos"=>array(
-		"gif_community_1.gif",
-		"community_badges_up.jpg",
-		"gif_community_2.gif",
+		"zooppa-badgelevels.png",
+		"zooppa-projectreview.gif",
+		"zooppa-videoreview.gif",
+		"zooppa-userprofile.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -362,9 +347,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"df5852",
 	"personal"=>"I honestly thought I was able to win this competition, but since my piece wasn't chosen, I was able to have this work printed through Bumblejax, and mounted as a large format art piece against my wall at home.",
-	"interior_background"=>"IMG_9468.jpg",
-	"interior_logo"=>"uwaji.png",
-	"cover"=>"print_7062.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
 	"skills"=>array('Digital illustration','graphic design','large format printing','mounting'),
 	"client"=>array( // $info => $detail
@@ -378,7 +361,7 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"print_7062_copy.jpg",
+		"uwajimaya-art.jpg",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -395,9 +378,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"867758",
 	"personal"=>"I wanted to experiment with geometric shapes and color combinations that I liked. In order to do that, I thought it would be interesting to see how these shapes and colors would handle as an infographic. I used a lot of golden ratio scaling in this piece.",
-	"interior_background"=>"",
-	"interior_logo"=>"nat.png",
-	"cover"=>"w-nato-02.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
 	"skills"=>array('graphic design','info graphic design'),
 	"client"=>array( // $info => $detail
@@ -411,8 +392,7 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"w-nato-02_copy.png",
-		"artwork_nato_12.jpg",
+		"nato-graphic.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -429,9 +409,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"ea312c",
 	"personal"=>"Designed wakescreen covers for horizontal, vertical, and square compositions. Once approved, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files (each) compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets.",
-	"interior_background"=>"IMG_2704.jpg",
-	"interior_logo"=>"kind.png",
-	"cover"=>"w-amazon-wildlife.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (South Lake Union)", // this will be displayed above h1
 	"skills"=>array('language conversion','Photoshop','indesign','typography','layout design','Cover design','Automator'),
 	"client"=>array( // $info => $detail
@@ -445,11 +423,11 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"amazon-elevationmars.png",
-		"amazon-joininghands.png",
-		"amazon-shuffleboard.png",
-		"amazon-talisman.png",
-		"amazon-wildlife.png",
+		"firekindle-elevationmars.png",
+		"firekindle-joininghands.png",
+		"firekindle-shuffleboard.png",
+		"firekindle-talisman.png",
+		"firekindle-wildlife.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -467,9 +445,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"52cadb",
 	"personal"=>"Watson rebranded their business, and they wanted all their pieces to be up to date. I designed all their new brochures for their new product lines into interactive and printable PDFs, and also redesigned their business principals hangboards in their showroom into large format acrylic pieces.",
-	"interior_background"=>"IMG_2712.JPG",
-	"interior_logo"=>"wat.png",
-	"cover"=>"print_5773.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
 	"skills"=>array('booklet design','hang board design','interactive PDF design','logo design','Photo retouching','layout design'),
 	"client"=>array( // $info => $detail
@@ -483,10 +459,10 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"print_5773_copy.png",
-		"print_5775.jpg",
-		"print_5777.jpg",
-		"print_5779.jpg",
+		"watson-distinctiveproduct.png",
+		"watson-practicalenvironmentalism.png",
+		"watson-showroom.png",
+		"watson-wearebuilders.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -503,9 +479,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"f92476",
 	"personal"=>"I really enjoy designing kits for events, because you design all the components used for the event, as well as the container that holds the components. This piece was shipped to all stores nationwide.",
-	"interior_background"=>"",
-	"interior_logo"=>"tm.png",
-	"cover"=>"print_3170.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1
 	"skills"=>array('layout design','Cover design','Photo retouching','print design'),
 	"client"=>array( // $info => $detail
@@ -519,15 +493,15 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"3170.jpg",
-		"3161.jpg",
-		"3163.jpg",
-		"3168.jpg",
-		"7821.jpg",
-		"7822.jpg",
-		"7823.jpg",
-		"7825.jpg",
-		"9744.jpg",
+		"t-boxopened.png",
+		"t-boxwrapped.png",
+		"t-cardgame.png",
+		"t-cover.png",
+		"t-customerscenarios.png",
+		"t-informationsheets.png",
+		"t-kitcomponents.png",
+		"t-markers.png",
+		"t-participantguide.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -544,9 +518,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"007042",
 	"personal"=>"We pitched an idea where the ease of use for their login experience would speed up the process for their users, but the starbux team that we worked with took the path where extra security measures was needed. I realized how much security steps is needed to login to their databases. ",
-	"interior_background"=>"IMG_2714.jpg",
-	"interior_logo"=>"sb.png",
-	"cover"=>"starbux_mfa.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
 	"skills"=>array('user flow','flow diagram','layout design','interaction design','prototyping','responsive design','Photoshop','indesign'),
 	"client"=>array( // $info => $detail
@@ -559,7 +531,10 @@ $array_projects[] = array(
 		"experience" => "",
 		),
 	"badge"=>array('id','vd'),
-	"photos"=>array(),
+	"photos"=>array(
+		"starbucks-login.png",
+		"starbucks-proposed.png",
+		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
@@ -575,9 +550,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"f92476",
 	"personal"=>"These booklets are fun, because it actually keeps me up to date on what's new for our mobile devices.",
-	"interior_background"=>"",
-	"interior_logo"=>"tm.png",
-	"cover"=>"", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1
 	"skills"=>array('Photo retouching','Cover design','layout design','print design'),
 	"client"=>array( // $info => $detail
@@ -590,7 +563,7 @@ $array_projects[] = array(
 		"experience" => "",
 		),
 	"badge"=>array('vd'),
-	"photos"=>array(),
+	"photos"=>array("t-participantguide.png"),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
@@ -607,9 +580,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"2f7da5",
 	"personal"=>"A new high-end night club was opening up in Belltown Seattle back in 2012, and we were able to design the website for their grand opening. I remember working on this at late nights with our design team, and we were able to crank it out in less than a week.",
-	"interior_background"=>"380475346.jpg",
-	"interior_logo"=>"fnc.png",
-	"cover"=>"w_foundationnightclub.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Belltown)", // this will be displayed above h1
 	"skills"=>array('web design','layout design','widget design','indesign','Photoshop','wireframing'),
 	"client"=>array( // $info => $detail
@@ -623,7 +594,7 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"w_foundationnightclub_copy.png",
+		"foundation-laptop.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -640,9 +611,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"676e3c",
 	"personal"=>"This was our first CMS site we designed in Japanese back in 2012, before the big wave of responsive sites started to kick in. Our client wanted to create a site that targets Japanese women to a new way of life of being \"spirited\" and \"energetic\"",
-	"interior_background"=>"IMG_9465.jpg",
-	"interior_logo"=>"gofeisty.png",
-	"cover"=>"2016-04-30_2_16_12.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
 	"skills"=>array('web design','layout design','graphic design','wireframing','banner design'),
 	"client"=>array( // $info => $detail
@@ -656,7 +625,8 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"gif_gofeisty.gif",
+		"gofeisty-landing.png",
+		"gofeisty-pages.gif",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -673,9 +643,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"f2a86f",
 	"personal"=>"One of our favorite events that we threw for a community was a dance focused hip-hop competition for b-boy/b-girls around the PNW. Dancers from all over Washington came to Bremerton to compete against each other.",
-	"interior_background"=>"",
-	"interior_logo"=>"friendsorenemies.png",
-	"cover"=>"print_6170.jpg", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
 	"skills"=>array('videography','interactive YouTube','logo design','artwork','wood trophy design','acrylic trophy design','poster design','handout design','stuff shirt design','background design','invitation design','print design','premier','Photoshop','illustrator','indesign'),
 	"client"=>array( // $info => $detail
@@ -689,15 +657,12 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','id','vd','cs'),
 	"photos"=>array(
-		"6165.jpg",
-		"6167.jpg",
-		"6168.jpg",
-		"6170.jpg",
-		"6171.jpg",
-		"6173.jpg",
-		"6174.jpg",
-		"6189.jpg",
-		"6201.jpg",
+		"foe-acrylicplaque.png",
+		"foe-youtube.gif",
+		"foe-bartent.png",
+		"foe-staffshirts.png",
+		"foe-trophiewood.png",
+		"foe-deliverables.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -714,9 +679,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"bb7d9e",
 	"personal"=>"I tend to steer towards a look that is more neutral and medium in weight, so that it allows the atmosphere behind the logo to have space to shine. I sketch small, so that I know it works at small scales. Logos should just support the personality of the brand, not be the cause of attention.",
-	"interior_background"=>"bg_top_fall.png",
-	"interior_logo"=>"",
-	"cover"=>"w-collectionlogos-01.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA", // this will be displayed above h1
 	"skills"=>array('logo design','indesign','illustrator','sketching'),
 	"client"=>array( // $info => $detail
@@ -745,9 +708,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"de904f",
 	"personal"=>"Our friends created a small non-profit organization that focuses on providing exposure to local hip-hop talent with events, wether it's b-boying (breakdancing), spoken poetry, freestyling, etc.",
-	"interior_background"=>"r.jpg",
-	"interior_logo"=>"rocksolid.png",
-	"cover"=>"w-rocksolid-01.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Silverdale)", // this will be displayed above h1
 	"skills"=>array('brochure design','booklet design','logo design','branding','videography','interactive YouTube','Business card design'),
 	"client"=>array( // $info => $detail
@@ -761,9 +722,9 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd','cs'),
 	"photos"=>array(
-		"23442.jpg",
-		"gif_rocksolid.gif",
-		"w-rocksolid-01_copy.png",
+		"rocksolid-businesscards.png",
+		"rocksolid-youtube.gif",
+		"rocksolid-sponsorship.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -780,9 +741,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"88beba",
 	"personal"=>"I can't seem to get rid of this piece, because it represented the type of artwork I enjoyed doing when I started out. I illustrated this pure vector piece back at the Art Institute circa 2008 that teaches students the process of creating vector pieces.",
-	"interior_background"=>"IMG_2699.jpg",
-	"interior_logo"=>"",
-	"cover"=>"web_portfolio_6647.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA", // this will be displayed above h1
 	"skills"=>array('vector illustration','artwork','print design','illustrator'),
 	"client"=>array( // $info => $detail
@@ -796,12 +755,12 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd','cs'),
 	"photos"=>array(
-		"6642.jpg",
-		"6646.jpg",
-		"6647.jpg",
-		"6648.jpg",
-		"6650.jpg",
-		"6651.jpg",
+		"ai-cameras.png",
+		"ai-camerawire.png",
+		"ai-flow.png",
+		"ai-girl.png",
+		"ai-girlwire.png",
+		"ai-poster.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -818,9 +777,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"77b037",
 	"personal"=>"Our team designed a box container for Rootworx to hold their product in. It's one thing designing in on screen, but it's another thing seeing them stacked all together as tangible pieces on site and in stores.",
-	"interior_background"=>"w-rootworx-03.jpg",
-	"interior_logo"=>"rwx.png",
-	"cover"=>"w-rootworx-02.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA", // this will be displayed above h1
 	"skills"=>array('box design','graphic design','mock up','print design'),
 	"client"=>array( // $info => $detail
@@ -833,7 +790,7 @@ $array_projects[] = array(
 		"experience" => "",
 		),
 	"badge"=>array('vd'),
-	"photos"=>array(),
+	"photos"=>array("rootworx-boxstack.png"),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
@@ -849,9 +806,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"hex"=>"f77543",
 	"personal"=>"I designed a ticketholder that has our company ID# inside the container and you're to write down your home address beforehand. Once ticket holders are ready to leave the building, you would just rip off a card, follow instructions to get home. Just a little fun thing we get to have.",
-	"interior_background"=>"luckystrike.jpg",
-	"interior_logo"=>"rev.png",
-	"cover"=>"web_portfolio_6595.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1
 	"skills"=>array('dicut design','mock up','perforation','layout design','Cover design'),
 	"client"=>array( // $info => $detail

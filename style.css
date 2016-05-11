@@ -139,7 +139,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_1_1_1 li {
       margin-right: 0%; } }
@@ -174,7 +175,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_1_2_2 li {
       margin-right: 0%; } }
@@ -211,7 +213,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_1_3_3 li {
       margin-right: 0%; } }
@@ -248,7 +251,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_2_2_2 li {
       margin-right: 0%; } }
@@ -286,7 +290,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_1_2_3 li {
       margin-right: 0%; } }
@@ -325,7 +330,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_2_3_3 li {
       margin-right: 0%; } }
@@ -371,7 +377,8 @@ p.bottom {
   float: left !important;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media screen and (min-width: 760px) {
     .grid_3_3_4 li {
       margin-right: 0%; } }
@@ -1026,7 +1033,7 @@ li.cs {
   padding-top: 0;
   padding-bottom: 0; }
   .about .about_upper {
-    background-image: url(_library/asset/img_about.png);
+    background-image: url(_library/asset/img_about_2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1090,7 +1097,9 @@ li.cs {
             box-shadow: 0 0 3px #222;
             left: 160px;
             top: 293px;
-            border: 2px solid white; } }
+            border: 2px solid white; }
+            .about .about_upper .inner .email:hover {
+              background-color: #161a1d; } }
       .about .about_upper .inner .resume {
         background-position-x: 13px;
         background-image: url(_library/asset/ico_resume.svg);
@@ -1119,7 +1128,9 @@ li.cs {
             right: inherit;
             top: 301px;
             left: 200px;
-            border: 2px solid white; } }
+            border: 2px solid white; }
+            .about .about_upper .inner .resume:hover {
+              background-color: #161a1d; } }
   .about .about_below {
     background-color: #f0f0f0;
     padding-bottom: 40px; }
@@ -1512,10 +1523,7 @@ li.cs {
           margin-bottom: 30px; }
         .section_interior .inner .interior_body .body_content .content_personal p {
           font-weight: 400;
-          margin-bottom: 0; }
-          @media screen and (min-width: 760px) {
-            .section_interior .inner .interior_body .body_content .content_personal p {
-              margin-bottom: 40px; } }
+          margin-bottom: 40px; }
         .section_interior .inner .interior_body .body_content a {
           font-family: 'Noto Sans Japanese', sans-serif;
           text-transform: uppercase;
@@ -1620,7 +1628,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_1_1_1 li {
               margin-right: 0%; } }
@@ -1654,7 +1663,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_1_2_2 li {
               margin-right: 0%; } }
@@ -1690,7 +1700,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_1_3_3 li {
               margin-right: 0%; } }
@@ -1726,7 +1737,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_2_2_2 li {
               margin-right: 0%; } }
@@ -1763,7 +1775,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_1_2_3 li {
               margin-right: 0%; } }
@@ -1801,7 +1814,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_2_3_3 li {
               margin-right: 0%; } }
@@ -1846,7 +1860,8 @@ li.cs {
           float: left !important;
           background-size: cover;
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          margin-bottom: 0; }
           @media screen and (min-width: 760px) {
             .section_interior .inner .interior_body .body_content ul.grid_3_3_4 li {
               margin-right: 0%; } }

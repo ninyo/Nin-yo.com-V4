@@ -227,6 +227,7 @@ p.bottom {
 		background-size:cover;
 		background-position:center;
 		background-repeat:no-repeat;
+		margin-bottom:0;
 
 		@media screen and (min-width: $tablet_body) {@include tablet_space;}
 		@media screen and (min-width: $laptop_body) {@include laptop_space;}
@@ -1021,7 +1022,7 @@ li.cs {background-position-x: -199px !important}
 	padding-top:0;
 	padding-bottom:0;
 	.about_upper {
-		background-image:url(_library/asset/img_about.png);
+		background-image:url(_library/asset/img_about_2.jpg);
 		background-size:cover;
 		background-repeat:no-repeat;
 		background-position:center;
@@ -1062,6 +1063,9 @@ li.cs {background-position-x: -199px !important}
 				@include vp('transform','rotate(90deg)');
 				@media screen and (min-width: $tablet_body) {left:-81px;}
 				@media screen and (min-width: $laptop_body) {
+					&:hover {
+						background-color:$color_black;
+						}
 					@include vp('box-shadow','0 0 3px #222');
 				    left: 160px;
 				    top: 293px;
@@ -1078,6 +1082,9 @@ li.cs {background-position-x: -199px !important}
 				@include vp('transform','rotate(90deg)');
 				@media screen and (min-width: $tablet_body) {right:-90px;}
 				@media screen and (min-width: $laptop_body) {
+					&:hover {
+						background-color:$color_black;
+						}
 					@include vp('box-shadow','0 0 3px #222');
 					right:inherit;
 					top: 301px;
@@ -1423,8 +1430,8 @@ li.cs {background-position-x: -199px !important}
 				.content_personal {
 					p {
 						font-weight: 400;
-						margin-bottom:0;
-						@media screen and (min-width: $tablet_body) {margin-bottom: 40px;}
+						margin-bottom:40px;
+						// @media screen and (min-width: $tablet_body) {margin-bottom: 40px;}
 						
 						}
 					}
