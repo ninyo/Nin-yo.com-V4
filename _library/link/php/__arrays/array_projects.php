@@ -361,6 +361,7 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
+		"uwajimaya-fromseat.jpg",
 		"uwajimaya-art.jpg",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
