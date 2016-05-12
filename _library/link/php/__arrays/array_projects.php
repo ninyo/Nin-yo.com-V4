@@ -409,7 +409,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"ea312c",
-	"personal"=>"Designed wakescreen covers for horizontal, vertical, and square compositions. Once approved, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files (each) compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets.",
+	"personal"=>"Designed wakescreen covers for horizontal, vertical, and square compositions. Once approved, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files (each) compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets (Presented here are just 12).",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (South Lake Union)", // this will be displayed above h1
 	"skills"=>array('language conversion','Photoshop','indesign','typography','layout design','Cover design','Automator'),
@@ -424,11 +424,9 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"firekindle-elevationmars.png",
-		"firekindle-joininghands.png",
-		"firekindle-shuffleboard.png",
-		"firekindle-talisman.png",
+		"firekindle-covers.png",
 		"firekindle-wildlife.png",
+		"firekindle-dizzy.gif",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 

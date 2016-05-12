@@ -251,7 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"Spend time on anything long enough, and it influences the lens that you view your world through&mdash;for me it's visual design. I'm drawn to well created compositions, and it's something I appreciate noticing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
+		"Spend time on anything long enough, and it affects the \"lens\" you view your world through&mdash;for me it's visual design. I appreciate well designed compositions, and it's something I enjoy experiencing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
 		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
