@@ -251,7 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"I'm a Seattle-based visual designer with an awesome commute.",
+		"I'm a Seattle-based visual designer with an awesome&nbsp;commute.",
 		// "Spend time on anything long enough, and it affects the way you view your world&mdash;for me it's visual design. I appreciate well designed compositions, and it's something I enjoy experiencing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
 		);
 	/* ——————————————————————————————————
@@ -411,8 +411,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>Spend time doing what you enjoy long enough, and it affects the way you see your world&mdash;for me it's visual design.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced with my friends by the culture of Hip&#8209hop through its artform of dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today. This experience also helped other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience (\"human&#8209centered\"&nbsp;design), web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Spend enough time doing what you enjoy, and it affects the way you see your world&mdash;I spent that time doing visual design.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before this profession, I was heavily influenced with my friends from the culture of Hip&#8209hop through its artform of: dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today. This experience also helped other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
@@ -445,7 +445,7 @@ function section_about(){
 							$output = $output . '<p class="score_type">CS</p>';
 						$output = $output . '</li>';
 					$output = $output . '</ul>';
-					$output = $output . "<p class='scorecard_description'>These numbers are dynamically pulling data from each project from a project pool to generate results.</p>";
+					$output = $output . "<p class='scorecard_description' style='font-size:10px;line-height:15px;'>The numbers are pulling data dynamically from each project to generate these results.</p>";
 				$output = $output . '</div>';
 			$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -609,7 +609,7 @@ function section_footer(){
 			$output = $output . '<a href="/">Back to main</a>';
 			}
 	$output = $output . '</div>';
-	$output = $output . '<div class="section copyright"><p><span style="color:#665">&copy; '.date('Y').' Site designed by nin-yo.com. All Rights Reserved. Site created using pen on paper, InDesign CC, Sublime Text, and <a href="http://github.com/ninyo" target="none" style="text-decoration:none;color:#665;font-weight:bold;">Github</a></span></p></div>';
+	$output = $output . '<div class="section copyright"><p><span style="color:#665">&copy; '.date('Y').' Site designed by nin-yo.com. All Rights Reserved. Site design using pen on paper, Adobe InDesign CC, Sublime Text, and <a href="http://github.com/ninyo" target="none" style="text-decoration:none;color:#665;font-weight:bold;">Github</a></span></p></div>';
 	/* ———————————————————————————————— */
 	return $output;}//close function
 	/* ———————————————————————————————— */

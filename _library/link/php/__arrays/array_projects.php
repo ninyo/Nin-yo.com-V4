@@ -426,7 +426,7 @@ $array_projects[] = array(
 	"photos"=>array(
 		"firekindle-covers.png",
 		"firekindle-wildlife.png",
-		"firekindle-dizzy.gif",
+		// "firekindle-dizzy.gif",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 

@@ -4,11 +4,11 @@
 	<?$title = "Portfolio of Ninyo Aganon";?>
 	<title><?echo $title?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="A multi-disciplinary Designer originally from Kitsap Washington, influenced by Seattle, and the expressive artform of Hip-hop." />
+	<meta name="description" content="A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington."/>
 	<meta property="og:type" content="Design">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:title" content="Portfolio of Ninyo Aganon">
-	<meta property="og:description" content="A multi-disciplinary Designer originally from Kitsap Washington, influenced by Seattle, and the expressive artform of Hip-hop.">
+	<meta property="og:description" content="A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington.">
 	<!-- <meta property="og:image" content="http://i.imgur.com/K1tWzdH.png"> -->
 	<meta property="og:url" content="http://nin-yo.com">
 	<?//<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">?>
