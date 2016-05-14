@@ -251,7 +251,8 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"Spend time on anything long enough, and it affects the \"lens\" you view your world through&mdash;for me it's visual design. I appreciate well designed compositions, and it's something I enjoy experiencing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
+		"I'm a Seattle-based visual designer with an awesome commute.",
+		// "Spend time on anything long enough, and it affects the way you view your world&mdash;for me it's visual design. I appreciate well designed compositions, and it's something I enjoy experiencing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
 		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
@@ -375,11 +376,26 @@ function section_about(){
 			$count_cs = $count_cs +1;
 			}
 		}
+	$array_bg[] = array(
+		"img_bg_goldenminute.png",
+		"img_bg_goldenminute.png",
+		"img_bg_pikesplace.png",
+		);
+
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
 	$output = $output . '<div class="section about">';
-		$output = $output . '<div class="about_upper">';
+		$count = 0;
+		foreach($array_bg as $bg){
+			shuffle($bg);
+			foreach($bg as $pic){
+				$count = $count +1;
+				if($count == 1){
+					$output = $output . '<div class="about_upper" style="background-image:url(_library/asset/'.$pic.');">';
+					}
+				}
+			}
 			$output = $output . '<div class="inner">';
 				$output = $output . '<div class="email"><a style="color:white;display:block;width:100%;height:100%;" href="mailto:mail@nin-yo.com">EMAIL</a></div>';
 				$output = $output . '<div class="resume"><a style="color:white;display:block;width:100%;height:100%;" href="_library/download/resume_ninyo.pdf">RESUME</a></div>';
@@ -395,8 +411,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced with my friends by the vibrant culture of Hip&#8209hop through its artform of dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>This field of visual design gave foundation to my work, while personally having a multi&#8209disciplinary background through: Front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), User&nbsp;experience (\"human&#8209centered\"&nbsp;design), Web&nbsp;design, and Videography (Using my C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Spend time doing what you enjoy long enough, and it affects the way you see your world&mdash;for me it's visual design.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Before design, I was heavily influenced with my friends by the culture of Hip&#8209hop through its artform of dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today. This experience also helped other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience (\"human&#8209centered\"&nbsp;design), web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/

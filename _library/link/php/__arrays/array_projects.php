@@ -102,7 +102,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"hex"=>"4e90e0",
 	"personal"=>"This represents the kind of work that I want to spend most of my time on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
-	"cover"=>"_cover.gif", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
 	"skills"=>array('sitemap','wireframing','prototyping','web design','indesign','photoshop cc','icon design','badge design','interaction design'),
 	"client"=>array( // $info => $detail
