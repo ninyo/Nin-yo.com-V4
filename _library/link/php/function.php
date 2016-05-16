@@ -197,28 +197,28 @@ function component_social_bar(){
 	$array_social[instagram] = array(
 		"url" => "http://instagram.com/",
 		"username" => "ninyoaganon",
-		"intent" => "my photographic grid",
+		"intent" => "photography",
 		);
 	$array_social[vimeo] = array(
 		"url" => "http://vimeo.com/",
 		"username" => "ninyo/videos/sort:date/format:thumbnail",
-		"intent" => "personal experiments",
+		"intent" => "experiments",
 		);
 	$array_social[twitter] = array(
 		"url" => "http://twitter.com/",
 		"username" => "ninyoaganon",
-		"intent" => "announcements of projects",
+		"intent" => "announcements",
 		);
 	$array_social[linkedin] = array(
 		"url" => "http://linkedin.com/in/",
 		"username" => "ninyo",
-		"intent" => "connect with me here",
+		"intent" => "contact me",
 		);
-	$array_social[fyuse] = array(
-		"url" => "http://fyu.se/u/",
-		"username" => "ninyo",
-		"intent" => "used for behind the scenes",
-		);
+	// $array_social[fyuse] = array(
+	// 	"url" => "http://fyu.se/u/",
+	// 	"username" => "ninyo",
+	// 	"intent" => "used for behind the scenes",
+	// 	);
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
