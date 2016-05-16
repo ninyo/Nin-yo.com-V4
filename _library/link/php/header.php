@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?$title = "Portfolio of Ninyo Aganon";?>
-	<title><?echo $title?></title>
+	<?
+	$head_title = "Portfolio of Ninyo Aganon";
+	$head_description = "A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington.";
+	?>
+	<title><? echo $head_title;?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington."/>
+	<meta name="description" content="<? echo $head_description;?>"/>
+	<meta property="og:title" content="<? echo $head_title?>">
+	<meta property="og:site_name" content="<? echo $head_title?>">
+	<meta property="og:description" content="<? echo $head_description;?>">
 	<meta property="og:type" content="Design">
 	<meta property="og:locale" content="en_US">
-	<meta property="og:title" content="Portfolio of Ninyo Aganon">
-	<meta property="og:description" content="A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington.">
-	<!-- <meta property="og:image" content="http://i.imgur.com/K1tWzdH.png"> -->
+	<meta property="og:image" content="_library/asset/og_image.jpg">
 	<meta property="og:url" content="http://nin-yo.com">
-	<?//<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">?>
+	<link rel="icon" type="image/png" href="_library/asset/ico_favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- <link rel="icon" type="image/png" href="_library/img/asset/fav_icon.png"> -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.5.3/core/js/jquery.mmenu.min.all.js" type="text/javascript"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lato:900,700' rel='stylesheet' type='text/css'>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-77649218-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body style="background:#fafafa;">
 

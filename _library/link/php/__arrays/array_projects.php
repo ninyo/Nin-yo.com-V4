@@ -101,7 +101,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"4e90e0",
-	"personal"=>"This represents the kind of work that I want to spend most of my time on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
+	"personal"=>"This represents the type of work that I want to spend most of my efforts on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
 	"skills"=>array('sitemap','wireframing','prototyping','web design','indesign','photoshop cc','icon design','badge design','interaction design'),
@@ -361,8 +361,8 @@ $array_projects[] = array(
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"uwajimaya-fromseat.jpg",
 		"uwajimaya-art.jpg",
+		"uwajimaya-left.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -509,30 +509,29 @@ $array_projects[] = array(
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
-	"title"=>"SBUX Login Process",// title will be displayed as h1
-	"subtitle"=>"UX & Visual Design",
-	"foldername"=>"starbucks-mfa",
+	"title"=>"Rottweiler Bikes",// title will be displayed as h1
+	"subtitle"=>"Poster",
+	"foldername"=>"rottweiler-bikes-poster",
 	"url"=>"",
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"007042",
-	"personal"=>"We pitched an idea where the ease of use for their login experience would speed up the process for their users, but the starbux team that we worked with took the path where extra security measures was needed. I realized how much security steps is needed to login to their databases. ",
+	"personal"=>"It's awesome to see a large format printed piece on the wall as if it were displayed like a standalone art piece. This was before they decided to rebrand into Rottweiler Motorcycle Company.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
-	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
-	"skills"=>array('user flow','flow diagram','layout design','interaction design','prototyping','responsive design','Photoshop','indesign'),
+	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
+	"skills"=>array('visual design','poster design'),
 	"client"=>array( // $info => $detail
 		"full_name" => "",
 		"company" => "",
 		),
 	"content"=>array(
-		"situation" => "",
-		"approach" => "",
-		"experience" => "",
+		"situation" => "The team at Rottweiler Bikes noticed motorcyclists commuting the ferry boat from Bainbridge to Seattle (from the opposite side of Kitsap Washington).",
+		"approach" => "The basic goal was to show that these services are what they offer, but in a way that is interesting because many morning commuters are actually laying down sideways and can actually read the words rightways (since their head is tilted). A large format poster was used. Inquiries from Bainbridge started coming up and created new clients.",
+		"experience" => "It's funny to think there will be a variety of eyes (from within the community that you grew up in) that will stumble upon looking at this poster and either dislike it, or like it. The interesting ones though are the ones that decide that they like it and where did that thought lead to?",
 		),
-	"badge"=>array('id','vd'),
+	"badge"=>array('vd'),
 	"photos"=>array(
-		"starbucks-login.png",
-		"starbucks-proposed.png",
+		"rb-poster.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
@@ -824,4 +823,79 @@ $array_projects[] = array(
 	"casestudy"=> "", // if(!==""){show casestudy section}
 	"closing"=>"",
 	);
+?>
+
+<?
+/* ————————————————————————————————————————————————————————————
+
+This is the hidden container. Not much assets needed inhere, just
+a quick description on title, subtitle, and point value.
+
+———————————————————————————————————————————————————————————— */
+
+
+/* ————————————————————————————————————————————————————————— */
+$array_projects[] = array(
+	"title"=>"SBUX Login Process",// title will be displayed as h1
+	"subtitle"=>"UX & Visual Design",
+	"foldername"=>"starbucks-mfa",
+	"url"=>"",
+	"video"=>"",
+	"demo"=>"",
+	"hex"=>"007042",
+	"personal"=>"We suggested an idea where the ease of use for their login experience would speed up the process for their users, but the starbux team that we worked with took the path where extra security measures was needed. I realized how much security steps is needed to login to their databases. ",
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+	"skills"=>array('user flow','flow diagram','layout design','interaction design','prototyping','responsive design','Photoshop','indesign'),
+	"client"=>array( // $info => $detail
+		"full_name" => "",
+		"company" => "",
+		),
+	"content"=>array(
+		"situation" => "",
+		"approach" => "",
+		"experience" => "",
+		),
+	"badge"=>array('id','vd'),
+	"photos"=>array(
+		"starbucks-login.png",
+		"starbucks-proposed.png",
+		),
+	"sketch"=>"",// if(!==""){then have a link to view sketch}
+	"category"=>'work', 
+	"casestudy"=> "", // if(!==""){show casestudy section}
+	"closing"=>"",
+	);
+
+$array_projects[] = array(
+	"title"=>"AMS Law",// title will be displayed as h1
+	"subtitle"=>"webdesign & branding",
+	"badge"=>array('vd'),
+	);
+
+$array_projects[] = array(
+	"title"=>"Design Lab University of Washington",// title will be displayed as h1
+	"subtitle"=>"online test platform",
+	"badge"=>array('vd'),
+	);
+
+$array_projects[] = array(
+	"title"=>"Ninyo V_3",// title will be displayed as h1
+	"subtitle"=>"portfolio design",
+	"badge"=>array('id','cs','vd','fed'),
+	);
+
+$array_projects[] = array(
+	"title"=>"Ninyo V_2",// title will be displayed as h1
+	"subtitle"=>"portfolio design",
+	"badge"=>array('id','cs','vd','fed'),
+	);
+
+$array_projects[] = array(
+	"title"=>"Meesum Pastry",// title will be displayed as h1
+	"subtitle"=>"Pike Place Market",
+	"badge"=>array('vd','cs'),
+	);
+
+
 ?>
