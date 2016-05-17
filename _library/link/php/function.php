@@ -413,8 +413,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>Spend enough time doing what you enjoy, and it affects the way you see your world&mdash;I spent that time doing visual design.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>Before this profession, I was heavily influenced with my friends from the culture of Hip&#8209hop through its artform of: dance, music, and graffiti. This cultivated my passion for creativity, which brought me to where I am today. This experience also helped other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						// $output = $output . "<p style='margin-bottom:15px;'>Spend enough time doing what you enjoy, and it affects the way you see your world&mdash;I spent that time doing visual design.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>Starting out, I was mainly influenced by my friends with the artform of Hip&#8209hop through its culture of: dance, music, and graffiti. This got me to pursue a field in creativity, which brought me to where I am today. This experience also cultivated other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
