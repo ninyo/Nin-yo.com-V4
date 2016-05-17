@@ -506,7 +506,7 @@ function section_interior(){
 									$output = $output . '<p>HOME</p>';
 								$output = $output . '</a>';
 								}
-							if($total > $next){ 
+							if(24 > $next){ 
 								$output = $output . '<a id="nextLink" class="nav_next" href="project.php?id='.$next.'">';
 									$output = $output . '<div class="next_arrow"></div>';
 									$output = $output . '<p>NEXT</p>';
