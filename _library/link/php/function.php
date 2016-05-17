@@ -312,7 +312,9 @@ function section_portfolio_grid(){
 			if($count < 25){
 				if($project[category]=='work'){
 					$output = $output . '<li>';
-						$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';
+						if($count==1){
+							$output = $output . '<a id="nextLink" href="project.php?id='.$id.'" class="layer_text">';
+							}else{$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';}
 							$output = $output . '<div href="project.php" class="container_layer_text">';
 								$output = $output . '<p class="title_project">'.strtoupper($project[title]).'</p>';
 								$output = $output . '<div class="layer_text_line" style="background-color:#'.$project[hex].'"></div>';
