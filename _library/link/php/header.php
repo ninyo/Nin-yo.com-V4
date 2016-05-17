@@ -3,7 +3,7 @@
 <head>
 	<?
 	$head_title = "Portfolio of Ninyo Aganon";
-	$head_description = "A multi-disciplinary Seattle-based visual designer currently residing in Kitsap Washington.";
+	$head_description = "A Seattle-based visual designer currently residing in Kitsap Washington.";
 	?>
 	<title><? echo $head_title;?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
