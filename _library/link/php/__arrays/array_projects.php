@@ -84,10 +84,10 @@ $array_projects[] = array(
 		"rmco-member.gif",
 		"rmco-merchandise.png",
 		"rmco-motorcyclepage.gif",
-		"rmco-foldedsweater.png",
 		"rmco-hatlogo.png",
 		"rmco-xs.gif",
 		"rmco-stickers.png",
+		"rmco-foldedsweater.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
