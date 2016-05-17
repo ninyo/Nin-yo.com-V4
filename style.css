@@ -1876,3 +1876,20 @@ li.cs {
             .section_interior .inner .interior_body .body_content ul.grid_3_3_4 li {
               height: 350px;
               width: 25%; } }
+
+.livesite {
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 30px;
+  color: white;
+  background: black;
+  display: inline-block;
+  padding: 10px 20px; }

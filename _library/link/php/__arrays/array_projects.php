@@ -65,7 +65,7 @@ $array_projects[] = array(
 	"video"=>"https://vimeo.com/162911217",
 	"demo"=>"",
 	"hex"=>"bf3423",
-	"personal"=>"This intense project dealt with providing: product videos, team photos, responsive web design, prototyping, mobile-first approach, web development, branding, etc. It represents the type of work that I'd like to focus my capabilities on.",
+	"personal"=>"This work dealt with creating: product videos & shots, team photos, responsive web design, prototyping, mobile-first approach, web development, branding, etc. It represents the type of work that I'd like to focus my capabilities on.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
 	"skills"=>array('logo design','sitemap','wireframing','prototyping','web design','videography','photography','front-end web development','php loops','php functions','html5','css3','sass','sass stylesheets','responsive design','mobile first approach','indesign','photoshop cc','illustrator cc','premiere cc','sublime text'),
@@ -80,11 +80,13 @@ $array_projects[] = array(
 		),
 	"badge"=>array('xd','id','fed','vd','cs'),
 	"photos"=>array(
-		"rmco-beanie.png",
+		"rmco-beanieshot.png",
 		"rmco-member.gif",
 		"rmco-merchandise.png",
 		"rmco-motorcyclepage.gif",
-		"rmco-shot.png",
+		"rmco-foldedsweater.png",
+		"rmco-hatlogo.png",
+		"rmco-xs.gif",
 		"rmco-stickers.png",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}

@@ -838,6 +838,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/rmco-rebrand\/rmco-beanieshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 698778,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-beanieshot.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-beanieshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rmco-rebrand\/rmco-foldedsweater.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 393905,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-foldedsweater.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-foldedsweater.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rmco-rebrand\/rmco-hatlogo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 450958,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-hatlogo.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rmco-rebrand\/rmco-hatlogo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/rmco-rebrand\/rmco-merchandise.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -966,6 +999,50 @@
 		"initialSize": 398547,
 		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/rootworx-boxstack.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rootworx-box-container\/rootworx-boxstack.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_bg.png": {
+		"fileType": 32768,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.27896e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_bg.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_cover.png": {
+		"fileType": 32768,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256862,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_cover.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_cover.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_logo.png": {
+		"fileType": 32768,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2060,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_logo.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/rottweiler-bikes-poster\/rb-poster.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256862,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/rb-poster.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/rottweiler-bikes-poster\/rb-poster.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1366,6 +1443,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/_projects\/uwajimaya-competition\/uwajimaya-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 350976,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/uwajimaya-competition\/uwajimaya-left.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/uwajimaya-competition\/uwajimaya-left.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/watson-asset-design\/_bg.png": {
 		"fileType": 32768,
 		"ignore": 1,
@@ -1542,6 +1630,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_library\/asset\/ico_favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 195,
+		"inputAbbreviatedPath": "\/_library\/asset\/ico_favicon.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/ico_favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/icon_scorecard.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1604,6 +1703,17 @@
 		"initialSize": 409494,
 		"inputAbbreviatedPath": "\/_library\/asset\/img_project_null.png",
 		"outputAbbreviatedPath": "\/_library\/asset\/img_project_null.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/og_image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.3717e+06,
+		"inputAbbreviatedPath": "\/_library\/asset\/og_image.jpg",
+		"outputAbbreviatedPath": "\/_library\/asset\/og_image.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
