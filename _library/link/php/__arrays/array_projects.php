@@ -678,7 +678,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"bb7d9e",
-	"personal"=>"I tend to steer towards a look that is more neutral and medium in weight, so that it allows the atmosphere behind the logo to have space to shine. I sketch small, so that I know it works at small scales. Logos should just support the personality of the brand, not be the cause of attention.",
+	"personal"=>"I tend to steer towards a look that is more neutral and medium in weight, so that it allows the logo to feel more like an accent to its environment. I sketch small, so that I know it works at small scales. Logos should just support the personality of the brand, not take up the attention, and be versatile.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA", // this will be displayed above h1
 	"skills"=>array('logo design','indesign','illustrator','sketching'),
