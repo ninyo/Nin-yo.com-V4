@@ -776,7 +776,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"77b037",
-	"personal"=>"Our team designed a box container for Rootworx to hold their product in. It's one thing designing in on screen, but it's another thing seeing them stacked all together as tangible pieces on site and in stores.",
+	"personal"=>"Our team designed a box container for Rootworx to hold their product in. It's one thing to see your designs on screen for print, but it's another thing seeing them in person all stacked together as tangible pieces on site and in stores.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA", // this will be displayed above h1
 	"skills"=>array('box design','graphic design','mock up','print design'),
