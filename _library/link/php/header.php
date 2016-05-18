@@ -13,7 +13,7 @@
 	<meta property="og:description" content="<? echo $head_description;?>">
 	<meta property="og:type" content="Design">
 	<meta property="og:locale" content="en_US">
-	<meta property="og:image" content="_library/asset/og_image.jpg">
+	<meta property="og:image" content="http://nin-yo.com/_library/asset/og_image.jpg">
 	<meta property="og:url" content="http://nin-yo.com">
 	<link rel="icon" type="image/png" href="_library/asset/ico_favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
