@@ -6,8 +6,8 @@ $headtitle = 'main';//should be placed before loader
 ?>
 
 <? 
-$display = $array_controller['landing_page']['switch_display'];
-$status = $array_controller['landing_page']['switch_status'];
+// $display = $array_controller['landing_page']['switch_display'];
+// $status = $array_controller['landing_page']['switch_status'];
 
 /* ————————————————————————————————————————————————————————— 
 ECHO CLIPBOARD BELOW
