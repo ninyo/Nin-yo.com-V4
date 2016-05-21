@@ -251,7 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"Visuals and ideas can be powerful and leave a long lasting impression from the things we look at, to the interfaces we use daily. ",
+		"Visuals and ideas can be powerful and leave a long lasting impression from the things we look at, to the interfaces we use daily. Being able to create those things for people (either tangibly, or digitally) is one of the reasons why I enjoy this type of work.",
 		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
