@@ -1353,6 +1353,10 @@ li.cs {background-position-x: -199px !important}
 			.body_content {
 				text-align:center;
 				margin-top:-20px;
+				ul {
+					@include vp('border-radius','3px');
+					overflow:hidden;
+					}
 				.content_avatar {
 					@include vp('box-shadow','0 0 3px #222');
 					@include vp('transition','.5s');

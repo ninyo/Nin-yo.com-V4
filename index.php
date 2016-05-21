@@ -15,6 +15,7 @@ ECHO CLIPBOARD BELOW
 
 echo $_header_main;
 echo $_section_portfolio_grid;
+// echo $_section_showmore;
 echo $_section_about;
 echo $_section_footer;
 

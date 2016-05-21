@@ -23,39 +23,7 @@ Category
 $array_projects = array();
 /* ————————————————————————————————————————————————————————— */
 
-/* ————————————————————————————————————————————————————————— */
-$array_projects[] = array(
-	"title"=>"BDB crew",// title will be displayed as h1
-	"subtitle"=>"Crew Logo",
-	"foldername"=>"boogie-down-bremerton",
-	"url"=>"",
-	"video"=>"https://vimeo.com/150865707",
-	"demo"=>"",
-	"hex"=>"525b55",
-	"personal"=>"The logo turned out to be my favorite, because of its simplicity of intertwining letters.",
-	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
-	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
-	"skills"=>array('logo design','videography',),
-	"client"=>array( // $info => $detail
-		"full_name" => "",
-		"company" => "",
-		),
-	"content"=>array(
-		"situation" => "Dance crews all around Washington were branding themselves with the help of a logomark that represents their crew as a whole. We've opted out of it for a long time, because it didn't feel necessary until we decided to have one for our 10 year anniversary.",
-		"approach" => "The idea behind designing this mark is that it should be able to match the personality of each individual: not too much in one way and not too much in another way. A neutral, yet contemporary look that could be used for anything.",
-		"experience" => "Intertwining the letter forms together as \"threads\" felt like the best answer that represents our overall style. We also created a couple versions using the same structure so that we can have fun with it.",
-		),
-	"badge"=>array('vd'),
-	"photos"=>array(
-		"bdb-coaster.png",
-		"bdb-logoanimation.gif",
-		"bdb-desk.png",
-		),
-	"sketch"=>"",// if(!==""){then have a link to view sketch}
-	"category"=>'work', 
-	"casestudy"=> "", // if(!==""){show casestudy section}
-	"closing"=>"Thanks to my brothers from Boogie Down Bremerton. I wouldn't have been here without you guys.",
-	);
+
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Rottweiler Motorcycle Co.",// title will be displayed as h1
@@ -373,37 +341,6 @@ $array_projects[] = array(
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
-	"title"=>"Nato Poster",// title will be displayed as h1
-	"subtitle"=>"Info Graphic",
-	"foldername"=>"nato-graphic-design",
-	"url"=>"",
-	"video"=>"",
-	"demo"=>"",
-	"hex"=>"867758",
-	"personal"=>"I wanted to experiment with geometric shapes and color combinations that I liked. In order to do that, I thought it would be interesting to see how these shapes and colors would handle as an infographic. I used a lot of golden ratio scaling in this piece.",
-	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
-	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
-	"skills"=>array('graphic design','info graphic design'),
-	"client"=>array( // $info => $detail
-		"full_name" => "",
-		"company" => "",
-		),
-	"content"=>array(
-		"situation" => "This is just a personal project that I wanted to experiment with. I was questioning if anything you read in an article or piece of information online can be translated into an info graphic if statistics were involved.",
-		"approach" => "I wanted to start with primary circles with some usage of golden ratios. The rest were represented in percentages.",
-		"experience" => "Just for fun! Nothing big.",
-		),
-	"badge"=>array('vd'),
-	"photos"=>array(
-		"nato-graphic.png",
-		),
-	"sketch"=>"",// if(!==""){then have a link to view sketch}
-	"category"=>'work', 
-	"casestudy"=> "", // if(!==""){show casestudy section}
-	"closing"=>"",
-	);
-/* ————————————————————————————————————————————————————————— */
-$array_projects[] = array(
 	"title"=>"Firekindle Wakescreen",// title will be displayed as h1
 	"subtitle"=>"App Advertisement",
 	"foldername"=>"amazon-firekindle-wakescreen-ads",
@@ -635,6 +572,39 @@ $array_projects[] = array(
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
+	"title"=>"BDB crew",// title will be displayed as h1
+	"subtitle"=>"Crew Logo",
+	"foldername"=>"boogie-down-bremerton",
+	"url"=>"",
+	"video"=>"https://vimeo.com/150865707",
+	"demo"=>"",
+	"hex"=>"525b55",
+	"personal"=>"The logo turned out to be my favorite, because of its simplicity of intertwining letters.",
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
+	"skills"=>array('logo design','videography',),
+	"client"=>array( // $info => $detail
+		"full_name" => "",
+		"company" => "",
+		),
+	"content"=>array(
+		"situation" => "Dance crews all around Washington were branding themselves with the help of a logomark that represents their crew as a whole. We've opted out of it for a long time, because it didn't feel necessary until we decided to have one for our 10 year anniversary.",
+		"approach" => "The idea behind designing this mark is that it should be able to match the personality of each individual: not too much in one way and not too much in another way. A neutral, yet contemporary look that could be used for anything.",
+		"experience" => "Intertwining the letter forms together as \"threads\" felt like the best answer that represents our overall style. We also created a couple versions using the same structure so that we can have fun with it.",
+		),
+	"badge"=>array('vd'),
+	"photos"=>array(
+		"bdb-coaster.png",
+		"bdb-logoanimation.gif",
+		"bdb-desk.png",
+		),
+	"sketch"=>"",// if(!==""){then have a link to view sketch}
+	"category"=>'work', 
+	"casestudy"=> "", // if(!==""){show casestudy section}
+	"closing"=>"Thanks to my brothers from Boogie Down Bremerton. I wouldn't have been here without you guys.",
+	);
+/* ————————————————————————————————————————————————————————— */
+$array_projects[] = array(
 	"title"=>"Friends or Enemies B&#8209boy Battle",// title will be displayed as h1
 	"subtitle"=>"Event Design",
 	"foldername"=>"friends-or-enemies-bboy-competition",
@@ -698,6 +668,37 @@ $array_projects[] = array(
 	"casestudy"=> "", // if(!==""){show casestudy section}
 	"closing"=>"",
 	);
+$array_projects[] = array(
+	"title"=>"Nato Poster",// title will be displayed as h1
+	"subtitle"=>"Info Graphic",
+	"foldername"=>"nato-graphic-design",
+	"url"=>"",
+	"video"=>"",
+	"demo"=>"",
+	"hex"=>"867758",
+	"personal"=>"I wanted to experiment with geometric shapes and color combinations that I liked. In order to do that, I thought it would be interesting to see how these shapes and colors would handle as an infographic. I used a lot of golden ratio scaling in this piece.",
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
+	"skills"=>array('graphic design','info graphic design'),
+	"client"=>array( // $info => $detail
+		"full_name" => "",
+		"company" => "",
+		),
+	"content"=>array(
+		"situation" => "This is just a personal project that I wanted to experiment with. I was questioning if anything you read in an article or piece of information online can be translated into an info graphic if statistics were involved.",
+		"approach" => "I wanted to start with primary circles with some usage of golden ratios. The rest were represented in percentages.",
+		"experience" => "Just for fun! Nothing big.",
+		),
+	"badge"=>array('vd'),
+	"photos"=>array(
+		"nato-graphic.png",
+		),
+	"sketch"=>"",// if(!==""){then have a link to view sketch}
+	"category"=>'work', 
+	"casestudy"=> "", // if(!==""){show casestudy section}
+	"closing"=>"",
+	);
+/* ————————————————————————————————————————————————————————— */
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Rocksolid",// title will be displayed as h1

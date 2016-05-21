@@ -1440,6 +1440,13 @@ li.cs {
       .section_interior .inner .interior_body .body_content {
         text-align: center;
         margin-top: -20px; }
+        .section_interior .inner .interior_body .body_content ul {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+          border-radius: 3px;
+          overflow: hidden; }
         .section_interior .inner .interior_body .body_content .content_avatar {
           -webkit-box-shadow: 0 0 3px #222;
           -moz-box-shadow: 0 0 3px #222;

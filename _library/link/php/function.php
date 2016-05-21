@@ -251,8 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"I'm a Seattle-based visual designer with an awesome&nbsp;commute.",
-		// "Spend time on anything long enough, and it affects the way you view your world&mdash;for me it's visual design. I appreciate well designed compositions, and it's something I enjoy experiencing. Keeping attentive to great work sets a stronger understanding on today's trends, and how it can influence your work.",
+		"Visuals and ideas can be powerful and leave a long lasting impression from the things we look at, to the things we digitally interact with daily. This is why I enjoy doing this kind of work, because the process is intended to be designed for the people that we're creating the product for. The challenges around acheiving that result is what keeps us creatively thinking.",
 		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
@@ -301,6 +300,7 @@ function section_divide(){
 
 function section_portfolio_grid(){
 	global $array_projects;
+	$show = $_GET[show];
 	/* ——————————————————————————————————
 	DESCRIPTION: this will be featuring a grid of 4x3 on desktop and 3x4 on mobile and tablet. usually people use a 2 column grid on mobile, but i will do a 3 column grid like instagram.
 	——————————————————————————————————— */
@@ -309,30 +309,59 @@ function section_portfolio_grid(){
 		$count = 0;
 		foreach($array_projects as $id => $project){
 			$count = $count +1;
-			if($count < 25){
-				if($project[category]=='work'){
-					$output = $output . '<li>';
-						if($count==1){
-							$output = $output . '<a id="nextLink" href="project.php?id='.$id.'" class="layer_text">';
-							}else{$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';}
-							$output = $output . '<div href="project.php" class="container_layer_text">';
-								$output = $output . '<p class="title_project">'.strtoupper($project[title]).'</p>';
-								$output = $output . '<div class="layer_text_line" style="background-color:#'.$project[hex].'"></div>';
-								$output = $output . '<p class="location">'.ucwords($project[subtitle]).'</p>';
-								$output = $output . '<ul>';
-									foreach($project[badge] as $badge){
-										$output = $output . '<li class="'.$badge.'"></li>';
-										}
-								$output = $output . '</ul>';
-							$output = $output . '</div>';
-						$output = $output . '</a>';
-						$output = $output . '<div class="layer_dark"></div>';
-						if($project[cover]!==""){
-							$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
-							}else{
-							$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/img_project_null.png)center no-repeat;background-size:cover;"></div>';
-							}
-					$output = $output . '</li>';
+			if($show == "more"){
+				if($count < 25){
+					if($project[category]=='work'){
+						$output = $output . '<li>';
+							if($count==1){
+								$output = $output . '<a id="nextLink" href="project.php?id='.$id.'" class="layer_text">';
+								}else{$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';}
+								$output = $output . '<div href="project.php" class="container_layer_text">';
+									$output = $output . '<p class="title_project">'.strtoupper($project[title]).'</p>';
+									$output = $output . '<div class="layer_text_line" style="background-color:#'.$project[hex].'"></div>';
+									$output = $output . '<p class="location">'.ucwords($project[subtitle]).'</p>';
+									$output = $output . '<ul>';
+										foreach($project[badge] as $badge){
+											$output = $output . '<li class="'.$badge.'"></li>';
+											}
+									$output = $output . '</ul>';
+								$output = $output . '</div>';
+							$output = $output . '</a>';
+							$output = $output . '<div class="layer_dark"></div>';
+							if($project[cover]!==""){
+								$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
+								}else{
+								$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/img_project_null.png)center no-repeat;background-size:cover;"></div>';
+								}
+						$output = $output . '</li>';
+						}
+					}
+				}else{
+				if($count < 13){
+					if($project[category]=='work'){
+						$output = $output . '<li>';
+							if($count==1){
+								$output = $output . '<a id="nextLink" href="project.php?id='.$id.'" class="layer_text">';
+								}else{$output = $output . '<a href="project.php?id='.$id.'" class="layer_text">';}
+								$output = $output . '<div href="project.php" class="container_layer_text">';
+									$output = $output . '<p class="title_project">'.strtoupper($project[title]).'</p>';
+									$output = $output . '<div class="layer_text_line" style="background-color:#'.$project[hex].'"></div>';
+									$output = $output . '<p class="location">'.ucwords($project[subtitle]).'</p>';
+									$output = $output . '<ul>';
+										foreach($project[badge] as $badge){
+											$output = $output . '<li class="'.$badge.'"></li>';
+											}
+									$output = $output . '</ul>';
+								$output = $output . '</div>';
+							$output = $output . '</a>';
+							$output = $output . '<div class="layer_dark"></div>';
+							if($project[cover]!==""){
+								$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/_projects/'.$project[foldername].'/'.$project[cover].')center no-repeat;background-size:cover;"></div>';
+								}else{
+								$output = $output . '<div class="layer_img_portfolio" style="background:url(_library/asset/img_project_null.png)center no-repeat;background-size:cover;"></div>';
+								}
+						$output = $output . '</li>';
+						}
 					}
 				}
 			} // end of foreach loop
@@ -413,8 +442,9 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						// $output = $output . "<p style='margin-bottom:15px;'>Spend enough time doing what you enjoy, and it affects the way you see your world&mdash;I spent that time doing visual design.</p>";
-						$output = $output . "<p style='margin-bottom:15px;'>Starting out, I was mainly influenced by my friends with the artform of Hip&#8209hop through its culture of: dance, music, and graffiti. This got me to pursue a field in creativity, which brought me to where I am today. This experience also cultivated other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>I work as a visual designer because I'm interested in creating the things people take time to look at, digest, interact, read, experience, etc. It's almost an art piece in the way it's designed, but with varying information. If you think about it, it's nice to pick up a well designed 'anything' once in a while, and just appreciate what you're looking at, or even purchasing (like a magazine or book).</p>"; 
+						$output = $output . "<p style='margin-bottom:15px;'>Nowadays with all the good looking social media / tech startup sites, the visual bar out there is pretty much standardized and high. One of the thoughts that commonly come up is \"are these designs working well for the users and how are they using them?\" with the consideration of that visual bar. My goal now is to understand that question through creating designs from that information.</p>";
+						// $output = $output . "<p style='margin-bottom:15px;'>Starting out, I was mainly influenced by my friends with the artform of Hip&#8209hop through its culture of: dance, music, and graffiti. This got me to pursue a field in creativity, which brought me to where I am today. This experience also cultivated other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
 				/*—————Right Side Scorecard—————*/
@@ -602,6 +632,28 @@ function section_interior(){
 	return $output;}//close function
 	/* ———————————————————————————————— */
 	$_section_interior = section_interior();
+
+/* ————————————————————————————————————————————————————————— */
+
+function section_showmore(){
+	global $headtitle;
+	$show = $_GET['show'];
+	/* ——————————————————————————————————
+	DESCRIPTION:
+	——————————————————————————————————— */
+		if($show !== 'more'){
+			$output = $output . '<div class="section footer" style="background:black;">';
+				$output = $output . '<a href="index.php?show=more">Show More</a>';
+			$output = $output . '</div>';
+			}else{
+			$output = $output . '<div class="section footer" style="background:black;">';
+				$output = $output . '<a href="index.php">Show Less</a>';
+			$output = $output . '</div>';
+			}
+	/* ———————————————————————————————— */
+	return $output;}//close function
+	/* ———————————————————————————————— */
+	$_section_showmore = section_showmore();
 
 /* ————————————————————————————————————————————————————————— */
 
