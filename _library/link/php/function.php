@@ -477,7 +477,7 @@ function section_about(){
 							$output = $output . '<p class="score_type">CS</p>';
 						$output = $output . '</li>';
 					$output = $output . '</ul>';
-					$output = $output . "<p class='scorecard_description' style='font-size:10px;line-height:15px;'>The numbers are pulling data dynamically from each project to generate this scorecard idea I took from General Assembly.</p>";
+					$output = $output . "<p class='scorecard_description' style='font-size:10px;line-height:15px;'>The numbers are pulling data dynamically from each project to generate this scorecard idea from General Assembly. I found this interesting, because everyone has unique numbers from one another.</p>";
 				$output = $output . '</div>';
 			$output = $output . '</div>';
 		$output = $output . '</div>';
