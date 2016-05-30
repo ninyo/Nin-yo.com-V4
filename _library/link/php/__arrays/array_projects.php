@@ -309,35 +309,35 @@ $array_projects[] = array(
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
-	"title"=>"Uwajimaya Bag Competition",// title will be displayed as h1
-	"subtitle"=>"Illustration",
-	"foldername"=>"uwajimaya-competition",
+	"title"=>"Gofeisty",// title will be displayed as h1
+	"subtitle"=>"Lifestyle Blog",
+	"foldername"=>"gofeisty-lifestyle-blog",
 	"url"=>"",
 	"video"=>"",
 	"demo"=>"",
-	"hex"=>"df5852",
-	"personal"=>"I honestly thought I was able to win this competition, but since my piece wasn't chosen, I was able to have this work printed through Bumblejax, and mounted as a large format art piece against my wall at home.",
+	"hex"=>"676e3c",
+	"personal"=>"This was our first CMS site we designed in Japanese back in 2012, before the big wave of responsive sites started to kick in. Our client wanted to create a site that targets Japanese women to a new way of life of being \"spirited\" and \"energetic\"",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
-	"skills"=>array('Digital illustration','graphic design','large format printing','mounting'),
+	"skills"=>array('web design','layout design','graphic design','wireframing','banner design'),
 	"client"=>array( // $info => $detail
 		"full_name" => "",
 		"company" => "",
 		),
 	"content"=>array(
-		"situation" => "Uwajimaya, at the time, was holding an art competition to give their winner $2000 in giftcard prizes. The winning piece will be printed onto the shopping bags and designer/artist rewarded",
-		"approach" => "The idea was to create a collage piece that compiles all of Uwajimaya's recognizable objects and product items. Take snapshots of 20 different objects and compose all into vectorized objects. Set composition to have a longer width to be able to wrap around the shopping bag if finished piece is selected",
-		"experience" => "I was very proud of the finished piece, but unfortunately I didn't win the prize. Even though I didn't make it, I was able to print this piece, and mounted on heavy gatorboard to be able to hang it as artwork at home &mdash;&hairsp;a Win/Win situation",
+		"situation" => "The original blogsite owner had multiple blogsites to allocate specific content, and had a new published book being distributed through amazon. Each blogsite belonged to one umbrella, but didn\'t have any sense of unification. A new fresh blog appearance was needed to tie of all blog outlets to be managed into one blogsite",
+		"approach" => "To design a new layout that would merge all blogsites and a space on the site to showcase the site owner's new book with a custom management functionality without having to base the foundation off of a template",
+		"experience" => "I've always wanted to design a foreign language website, and this was the opportunity to create a foreign language site with a CMS structure in mind. I had a lot of creative freedom with this site, and it was a lot of fun.",
 		),
 	"badge"=>array('vd'),
 	"photos"=>array(
-		"uwajimaya-art.jpg",
-		"uwajimaya-left.png",
+		"gofeisty-landing.png",
+		"gofeisty-pages.gif",
 		),
 	"sketch"=>"",// if(!==""){then have a link to view sketch}
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
-	"closing"=>"Thank you Corey from Bumblejax for letting me have this printed and mounted. It was awesome bringing this by foot around Seattle making me feel like some cool artist.",
+	"closing"=>"",
 	);
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
@@ -697,6 +697,38 @@ $array_projects[] = array(
 	"category"=>'work', 
 	"casestudy"=> "", // if(!==""){show casestudy section}
 	"closing"=>"",
+	);
+/* ————————————————————————————————————————————————————————— */
+$array_projects[] = array(
+	"title"=>"Uwajimaya Bag Competition",// title will be displayed as h1
+	"subtitle"=>"Illustration",
+	"foldername"=>"uwajimaya-competition",
+	"url"=>"",
+	"video"=>"",
+	"demo"=>"",
+	"hex"=>"df5852",
+	"personal"=>"I honestly thought I was able to win this competition, but since my piece wasn't chosen, I was able to have this work printed through Bumblejax, and mounted as a large format art piece against my wall at home.",
+	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
+	"skills"=>array('Digital illustration','graphic design','large format printing','mounting'),
+	"client"=>array( // $info => $detail
+		"full_name" => "",
+		"company" => "",
+		),
+	"content"=>array(
+		"situation" => "Uwajimaya, at the time, was holding an art competition to give their winner $2000 in giftcard prizes. The winning piece will be printed onto the shopping bags and designer/artist rewarded",
+		"approach" => "The idea was to create a collage piece that compiles all of Uwajimaya's recognizable objects and product items. Take snapshots of 20 different objects and compose all into vectorized objects. Set composition to have a longer width to be able to wrap around the shopping bag if finished piece is selected",
+		"experience" => "I was very proud of the finished piece, but unfortunately I didn't win the prize. Even though I didn't make it, I was able to print this piece, and mounted on heavy gatorboard to be able to hang it as artwork at home &mdash;&hairsp;a Win/Win situation",
+		),
+	"badge"=>array('vd'),
+	"photos"=>array(
+		"uwajimaya-art.jpg",
+		"uwajimaya-left.png",
+		),
+	"sketch"=>"",// if(!==""){then have a link to view sketch}
+	"category"=>'work', 
+	"casestudy"=> "", // if(!==""){show casestudy section}
+	"closing"=>"Thank you Corey from Bumblejax for letting me have this printed and mounted. It was awesome bringing this by foot around Seattle making me feel like some cool artist.",
 	);
 /* ————————————————————————————————————————————————————————— */
 /* ————————————————————————————————————————————————————————— */
