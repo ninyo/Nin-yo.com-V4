@@ -410,7 +410,6 @@ function section_about(){
 	$array_bg[] = array(
 		"img_bg_goldenminute.png",
 		"img_bg_goldenminute.png",
-		"img_bg_pikesplace.png",
 		);
 
 	/* ——————————————————————————————————
