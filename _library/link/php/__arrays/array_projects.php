@@ -33,6 +33,7 @@ $array_projects[] = array(
 	"video"=>"https://vimeo.com/162911217",
 	"demo"=>"",
 	"hex"=>"bf3423",
+	"credit"=>"",
 	"personal"=>"This work dealt with creating: product videos & shots, team photos, responsive web design, prototyping, mobile-first approach, web development, branding, etc. It represents the type of work that I'd like to focus my capabilities on.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
@@ -71,6 +72,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"4e90e0",
+	"credit"=>"MentorCG",
 	"personal"=>"This represents the type of work that I want to spend most of my efforts on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
@@ -104,6 +106,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"https://invis.io/834XLIOBW",
 	"hex"=>"de6d6c",
+	"credit"=>"General Assembly",
 	"personal"=>"Working on this piece at General Assembly allowed me to understand the process of a User Experience designer and how their workflow benefits the user and their overall experience.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (South Lake Union)", // this will be displayed above h1
@@ -143,6 +146,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"3e51e7",
+	"credit"=>"Revolution Marketing",
 	// "personal"=>"I was able to actually see people having a good time using these pieces live from instagram by typing in #thankyourunning. No one really thinks about who is involved with creating these things behind the scenes, but that's kind of the fun part.",
 	"personal"=>"I was able to see people smiling and having a good time receiving these pieces from instagram by typing in #thankyourunning. It helps to see what kind of impact your work is placing onto people you're designing for.",	
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
@@ -180,6 +184,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"b2b3ac",
+	"credit"=>"RN2 Creative",
 	"personal"=>"It's very interesting seeing how much work local leaders have contributed for their community. I felt grateful being able to learn and work on a history book that will be read and used by thousands of readers as an actual history piece.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
@@ -211,6 +216,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"c26a49",
+	"credit"=>"",
 	"personal"=>"Working on this actually tested me on how fast I can develop a site at a minimal viable product approach from the ground up.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
@@ -244,6 +250,7 @@ $array_projects[] = array(
 	"video"=>"https://vimeo.com/87938757",
 	"demo"=>"",
 	"hex"=>"f62751",
+	"credit"=>"Revolution Marketing",
 	// "personal"=>"I was able to spend the time creating a piece that utilizes all my skills from: designing, printing, mocking up, photography, creating dicuts, and actually using machines to create these pieces. It also taught me how to set up a step and repeat to be able to cut using math on a guillotine cutting machine.",
 	"personal"=>"I was able to create a piece that utilizes all my hands-on skills from: designing for print, mocking up, photography, creating dicuts, and actually using machines to help visualize final pieces. This work taught me important techniques that I still use today, even within a digital space.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
@@ -281,6 +288,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"d66d2a",
+	"credit"=>"MentorCG",
 	// "personal"=>"This project dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. This project was the funnest to work on, as well allowing me to design within no boundaries.",
 	"personal"=>"This work dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. I had a great time working with these guys, as well as allowing me to design within no boundaries.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
@@ -316,6 +324,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"676e3c",
+	"credit"=>"RN2 Creative",
 	"personal"=>"This was our first CMS site we designed in Japanese back in 2012, before the big wave of responsive sites started to kick in. Our client wanted to create a site that targets Japanese women to a new way of life of being \"spirited\" and \"energetic\"",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
@@ -348,6 +357,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"ea312c",
+	"credit"=>"Revolution Marketing",
 	"personal"=>"Designed wakescreen covers for horizontal, vertical, and square compositions. Once approved, use programs to spit out multiple language versions (FR, DE, JP, EU, EN, and IT) and export 160+ files (each) compatible for all kindle devices. I designed about 90+ wakescreens totalling 86,400 assets (Presented here are just 12).",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (South Lake Union)", // this will be displayed above h1
@@ -382,6 +392,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"52cadb",
+	"credit"=>"Watson Furniture Group",
 	"personal"=>"Watson rebranded their business, and they wanted all their pieces to be up to date. I designed all their new brochures for their new product lines into interactive and printable PDFs, and also redesigned their business principals hangboards in their showroom into large format acrylic pieces.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
@@ -416,6 +427,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"f92476",
+	"credit"=>"Revolution Marketing",
 	"personal"=>"I really enjoy designing kits for events, because you design all the components used for the event, as well as the container that holds the components. This piece was shipped to all stores nationwide.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1
@@ -455,6 +467,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"007042",
+	"credit"=>"",
 	"personal"=>"It's awesome to see a large format printed piece on the wall as if it were displayed like a standalone art piece. This was before they decided to rebrand into Rottweiler Motorcycle Company.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
@@ -486,6 +499,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"f92476",
+	"credit"=>"Revolution Marketing",
 	"personal"=>"These booklets are fun, because it actually keeps me up to date on what's new for our mobile devices.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1
@@ -516,6 +530,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"2f7da5",
+	"credit"=>"RN2 Creative",
 	"personal"=>"A new high-end night club was opening up in Belltown Seattle back in 2012, and we were able to design the website for their grand opening. I remember working on this at late nights with our design team, and we were able to crank it out in less than a week.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Belltown)", // this will be displayed above h1
@@ -547,6 +562,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"676e3c",
+	"credit"=>"RN2 Creative",
 	"personal"=>"This was our first CMS site we designed in Japanese back in 2012, before the big wave of responsive sites started to kick in. Our client wanted to create a site that targets Japanese women to a new way of life of being \"spirited\" and \"energetic\"",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
@@ -579,6 +595,7 @@ $array_projects[] = array(
 	"video"=>"https://vimeo.com/150865707",
 	"demo"=>"",
 	"hex"=>"525b55",
+	"credit"=>"Boogie Down Bremerton",
 	"personal"=>"The logo turned out to be my favorite, because of its simplicity of intertwining letters.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
@@ -612,6 +629,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"f2a86f",
+	"credit"=>"RocksolidNW",
 	"personal"=>"One of our favorite events that we threw for a community was a dance focused hip-hop competition for b-boy/b-girls around the PNW. Dancers from all over Washington came to Bremerton to compete against each other.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Bremerton)", // this will be displayed above h1
@@ -648,6 +666,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"bb7d9e",
+	"credit"=>"Various",
 	"personal"=>"I tend to steer towards a look that is more neutral and medium in weight, so that it allows the logo to feel more like an accent to its environment. I sketch small, so that I know it works at small scales. Logos should just support the personality of the brand, not take up the attention, and be versatile.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA", // this will be displayed above h1
@@ -668,6 +687,7 @@ $array_projects[] = array(
 	"casestudy"=> "", // if(!==""){show casestudy section}
 	"closing"=>"",
 	);
+/* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Nato Poster",// title will be displayed as h1
 	"subtitle"=>"Info Graphic",
@@ -676,6 +696,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"867758",
+	"credit"=>"Personal Accomplishment",
 	"personal"=>"I wanted to experiment with geometric shapes and color combinations that I liked. In order to do that, I thought it would be interesting to see how these shapes and colors would handle as an infographic. I used a lot of golden ratio scaling in this piece.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
@@ -707,6 +728,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"df5852",
+	"credit"=>"Personal Accomplishment",
 	"personal"=>"I honestly thought I was able to win this competition, but since my piece wasn't chosen, I was able to have this work printed through Bumblejax, and mounted as a large format art piece against my wall at home.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (International District)", // this will be displayed above h1
@@ -731,7 +753,6 @@ $array_projects[] = array(
 	"closing"=>"Thank you Corey from Bumblejax for letting me have this printed and mounted. It was awesome bringing this by foot around Seattle making me feel like some cool artist.",
 	);
 /* ————————————————————————————————————————————————————————— */
-/* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Rocksolid",// title will be displayed as h1
 	"subtitle"=>"Branding",
@@ -740,6 +761,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"de904f",
+	"credit"=>"RocksolidNW",
 	"personal"=>"Our friends created a small non-profit organization that focuses on providing exposure to local hip-hop talent with events, wether it's b-boying (breakdancing), spoken poetry, freestyling, etc.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Kitsap, WA (Silverdale)", // this will be displayed above h1
@@ -773,6 +795,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"88beba",
+	"credit"=>"Art Institute of Seattle",
 	"personal"=>"I can't seem to get rid of this piece, because it represented the type of artwork I enjoyed doing when I started out. I illustrated this pure vector piece back at the Art Institute circa 2008 that teaches students the process of creating vector pieces.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA", // this will be displayed above h1
@@ -809,6 +832,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"77b037",
+	"credit"=>"Dope Design Agency",
 	"personal"=>"Our team designed a box container for Rootworx to hold their product in. It's one thing to see your designs on screen for print, but it's another thing seeing them in person all stacked together as tangible pieces on site and in stores.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA", // this will be displayed above h1
@@ -838,6 +862,7 @@ $array_projects[] = array(
 	"demo"=>"",
 	"video"=>"",
 	"hex"=>"f77543",
+	"credit"=>"Revolution Marketing",
 	"personal"=>"I designed a ticketholder that has our company ID# inside the container and you're to write down your home address beforehand. Once ticket holders are ready to leave the building, you would just rip off a card, follow instructions to get home. Just a little fun thing we get to have.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Bellevue, WA", // this will be displayed above h1

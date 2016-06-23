@@ -619,6 +619,11 @@ function section_interior(){
 								if($project[demo]!==""){
 									$output = $output . '<a href="'.$project[demo].'" target="none"><p class="livesite">Test Demo</p></a>';
 									}
+								if($project[credit]!==""){
+									$output = $output . '<p style="font-size:12px;margin-top:20px;"><i>This project was made possible through <strong>'.$project[credit].'</strong></i>.</p>';
+									}else{
+									$output = $output . '<p style="font-size:12px;margin-top:20px;"><i>This was created as a solo freelance project<i>.</p>';
+									}
 						$output = $output . '</div>'; // end body_content
 					$output = $output . '</div>'; // end interior_body
 					}
