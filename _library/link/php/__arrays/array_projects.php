@@ -72,7 +72,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"4e90e0",
-	"credit"=>"MentorCG",
+	"credit"=>"Mentor Creative Group",
 	"personal"=>"This represents the type of work that I want to spend most of my efforts on. It's very fun to design a platform that both clients & administrators will use on a daily basis.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
 	"location"=>"Seattle, WA (Downtown)", // this will be displayed above h1
@@ -288,7 +288,7 @@ $array_projects[] = array(
 	"video"=>"",
 	"demo"=>"",
 	"hex"=>"d66d2a",
-	"credit"=>"MentorCG",
+	"credit"=>"Mentor Creative Group",
 	// "personal"=>"This project dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. This project was the funnest to work on, as well allowing me to design within no boundaries.",
 	"personal"=>"This work dealt with designing: full interfaces, profile pages, video submission pages, interactions between elements, submission components from multiple sections, icon designs, badge designs, etc. I had a great time working with these guys, as well as allowing me to design within no boundaries.",
 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
