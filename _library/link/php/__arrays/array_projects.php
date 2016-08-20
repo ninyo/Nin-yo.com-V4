@@ -25,6 +25,70 @@ $array_projects = array();
 
 
 /* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Amex Pay w/ Points",// title will be displayed as h1
+// 	"subtitle"=>"UX & Visual",
+// 	"foldername"=>"amex-ux",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('xd','id','vd','cs'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Steelers Nation Unite",// title will be displayed as h1
+// 	"subtitle"=>"Visual",
+// 	"foldername"=>"amex-ux",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('badge design','web design','indesign','photoshop cc'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('xd','id','vd','cs'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Rottweiler Motorcycle Co.",// title will be displayed as h1
 	"subtitle"=>"Rebranding & Web",
@@ -178,7 +242,7 @@ $array_projects[] = array(
 /* ————————————————————————————————————————————————————————— */
 $array_projects[] = array(
 	"title"=>"Welcome Home",// title will be displayed as h1
-	"subtitle"=>"History Book",
+	"subtitle"=>"History Book Design",
 	"foldername"=>"hokubei-hochi-welcome-home-history-booklet",
 	"url"=>"",
 	"video"=>"",
