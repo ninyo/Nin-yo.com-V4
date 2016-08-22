@@ -251,7 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"Being able to help clients visualize their ideas into an actual product with the use of sketches and prototypes (with the intent to design an enjoyable experience for their audience) are one of the reasons why I love this type of work. ",
+		"Being able to help clients visualize their ideas into an actual product with the use of research, conceptual sketches, lo/hi fidelity prototypes, and testing (with the intent to design a seamless experience) are one of the reasons why I love this type of work. ",
 		// "Visuals and ideas are powerful and leave long lasting impressions from the things we as consumers look at, to the interfaces we use daily. Being able to help clients visualize their concepts as an actual product, with the intent to help users' experiences become more enjoyable, are one of the reasons why I love this unique kind of work.",
 		);
 	/* ——————————————————————————————————
