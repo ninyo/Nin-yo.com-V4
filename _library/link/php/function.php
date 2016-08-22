@@ -251,7 +251,7 @@ function header_main(){
 	global $description;
 
 	$array_toptext[] = array(
-		"Visuals and ideas can be powerful and leave long lasting impressions from the things we look at, to the interfaces we use daily. Being able to create these things for people are one of the reasons why I continue to enjoy this type of work.",
+		"Visuals and ideas are powerful and leave long lasting impressions from the things we as consumers look at, to the interfaces we use daily. Being able to help clients visualize their concepts as an actual product, with the intent to help users' experiences become more enjoyable, are one of the reasons why I love this unique kind of work.",
 		);
 	/* ——————————————————————————————————
 	DESCRIPTION:
@@ -441,8 +441,8 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>I'm interested in creating the things people take time to: look at, digest, interact, read, experience, etc. It's almost an art piece by the process of how it was designed. If you think about it, it's nice to pick up a well designed <i>anything</i> once in a while, to appreciate what's trending, and even purchasing (like a magazine or book) for inspiration sake.</p>"; 
-						$output = $output . "<p style='margin-bottom:15px;'>Nowadays with all the good looking social media / tech startup sites out there, the visual bar is pretty much standardized and high. One of the thoughts that come to my mind is \"are these ideas working well for the users and how are they using them?\" My goal now is to understand those answers through exploring new ideas and seeing how it all comes together with the use of my experiences in this field.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>I'm interested in creating the things people take time to look at, digest, interact, read, experience, etc. It's almost an art piece by its own unique design process. If you think about it, it's nice to pick up a well designed <i>anything</i> once in a while: to appreciate what's trending visually, or even purchasing (like a magazine or book) as a tool to spark some inspiration.</p>"; 
+						$output = $output . "<p style='margin-bottom:15px;'>Today with all the good looking social media / tech startup sites and apps out there, the visual bar is pretty much standardized with an expected quality. One of the thoughts that come to my mind is \"are these solutions actually working well for its users (how?), and how are they using them?\" My goal now is to understand these questions through exploring new methods, consistently learn, and seeing how it all comes together with the use of my own experiences in this field.</p>";
 						// $output = $output . "<p style='margin-bottom:15px;'>Starting out, I was mainly influenced by my friends with the artform of Hip&#8209hop through its culture of: dance, music, and graffiti. This got me to pursue a field in creativity, which brought me to where I am today. This experience also cultivated other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';
