@@ -250,10 +250,10 @@ function header_main(){
 	global $position;
 	global $description;
 
-	$array_toptext[] = array(
-		"Being able to help clients visualize their ideas into an actual product through research, conceptual sketches, lo/hi fidelity prototypes, and testing are one of the reasons why I love this kind of work. I still wake up everyday consistently learning new things in this field.",
+	// $array_toptext[] = array(
+		// "Being able to help clients visualize their ideas into an actual product through research, conceptual sketches, lo/hi fidelity prototypes, and testing are one of the reasons why I love this kind of work. I still wake up everyday consistently learning new things in this field.",
 		// "Visuals and ideas are powerful and leave long lasting impressions from the things we as consumers look at, to the interfaces we use daily. Being able to help clients visualize their concepts as an actual product, with the intent to help users' experiences become more enjoyable, are one of the reasons why I love this unique kind of work.",
-		);
+		// );
 	/* ——————————————————————————————————
 	DESCRIPTION:
 	——————————————————————————————————— */
@@ -263,16 +263,17 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$count = 0;
-			foreach($array_toptext as $toptext){
-				shuffle($toptext);
-				foreach($toptext as $text){
-					$count = $count +1;
-					if($count == 1){
-						$output = $output . "<p class='header_description'>".$text."</p>";
-						}
-					}
-				}
+			$output = $output . "<p class='header_description'>Being able to help clients visualize ideas from research, conceptual sketches, lo/hi prototypes, and testing into an actual product are one of the reasons why I love this type of work. I wake up every single day wondering what else can I learn today?</p>";
+			// $count = 0;
+			// foreach($array_toptext as $toptext){
+			// 	shuffle($toptext);
+			// 	foreach($toptext as $text){
+			// 		$count = $count +1;
+			// 		if($count == 1){
+			// 			$output = $output . "<p class='header_description'>".$text."</p>";
+			// 			}
+			// 		}
+			// 	}
 			$output = $output . $_component_social_bar;
 		$output = $output . '</div>';
 		$output = $output . '</div>';
@@ -442,8 +443,9 @@ function section_about(){
 					$output = $output . '<p class="title">'.$position.'</p>';
 					$output = $output . '<div class="line_divider"></div>';
 					$output = $output . '<div class="paragraph">';
-						$output = $output . "<p style='margin-bottom:15px;'>I'm interested in creating the things people take time to look at, digest, interact, read, experience, etc. It's almost an art piece by its own unique design process. If you think about it, it's nice to pick up a well designed <i>anything</i> once in a while: to appreciate what's trending visually, or even purchasing (like a magazine or book) as a tool to spark some inspiration.</p>"; 
-						$output = $output . "<p style='margin-bottom:15px;'>Today with all the good looking social media / tech startup sites and apps out there, the visual bar is pretty much standardized with an expected quality. One of the thoughts that come to my mind is \"are these solutions actually working well for its users (how?), and how are they using them?\" My goal now is to understand these questions through exploring new methods, consistently learn, and seeing how it all comes together with the use of my own experiences in this field.</p>";
+						$output = $output . "<p style='margin-bottom:15px;'>I'm interested in creating the things people take time to look at, digest, interact, read, experience, etc. It's almost an art piece by its own unique design process. If you think about it, it's nice to pick up a well designed <i>anything</i> once in a while: to appreciate what's trending visually, or even purchasing (like a magazine or book) as a tool to spark some subconscious influence.</p>"; 
+						$output = $output . "<p style='margin-bottom:15px;'>Today with all the good looking social media / tech startup sites and apps out there, the visual bar is pretty much standardized with an expected quality. One of the thoughts that come to my mind is \"are these solutions working well for the ones using it everyday(?), and how are they using them?\" The intent to understand these questions is through experimenting with new hcd methods and be perceptive to design problems.</p>";
+						$output = $output . "<p style='margin-bottom:15px; color:#b08838;'>If you've read this far, I'm actually a super chill person. The majority of my off-time still involves design in some form or another, but I also enjoy: videography (in the art of documentation), photography (if I somehow remember to bring my camera), art (which is how I ended up in the design field in the first place), and <a style='color:#b08838; text-decoration:underline;' href='https://youtu.be/wp3pZu3oir4?t=50s' target='none'>dance</a> (the one that involves spinning on your head).</p>";
 						// $output = $output . "<p style='margin-bottom:15px;'>Starting out, I was mainly influenced by my friends with the artform of Hip&#8209hop through its culture of: dance, music, and graffiti. This got me to pursue a field in creativity, which brought me to where I am today. This experience also cultivated other outlets of: front&#8209end&nbsp;development (Sass, CSS, PHP, HTML), user&nbsp;experience, web&nbsp;design, and videography (C100 & 18&#8209;35mm&nbsp;f1.8 lens).</p>";
 					$output = $output . '</div>';
 				$output = $output . '</div>';

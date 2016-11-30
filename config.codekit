@@ -1,7 +1,29 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19137",
 "files": {
+	"\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Screen Shot 2016-08-09 at 12.21.23 PM.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 925679,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Screen Shot 2016-08-09 at 12.21.23 PM.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Screen Shot 2016-08-09 at 12.21.23 PM.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Sketch__Amex_MR_idea_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 856562,
+		"inputAbbreviatedPath": "\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Sketch__Amex_MR_idea_2.png",
+		"outputAbbreviatedPath": "\/_library\/asset\/_projects\/_amex-pwp\/sketch.png\/Sketch__Amex_MR_idea_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_library\/asset\/_projects\/amazon-firekindle-wakescreen-ads\/_bg.png": {
 		"fileType": 32768,
 		"ignore": 1,

@@ -26,7 +26,199 @@ $array_projects = array();
 
 /* ————————————————————————————————————————————————————————— */
 // $array_projects[] = array(
-// 	"title"=>"Amex Pay w/ Points",// title will be displayed as h1
+// 	"title"=>"Tradition 5",// title will be displayed as h1
+// 	"subtitle"=>"Event Design",
+// 	"foldername"=>"t5-design",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('vd','xd','cs'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Fine Hotel & Resorts",// title will be displayed as h1
+// 	"subtitle"=>"Dynamic Scorecard Design",
+// 	"foldername"=>"transitionalsoftware-design",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('vd','id'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Transitional Software",// title will be displayed as h1
+// 	"subtitle"=>"Collateral Redesign",
+// 	"foldername"=>"transitionalsoftware-design",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('vd'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Seabourn Luxury Cruiseline",// title will be displayed as h1
+// 	"subtitle"=>"Sign Up Forms",
+// 	"foldername"=>"seabourn-form",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('xd','vd'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"Gorilla Grip",// title will be displayed as h1
+// 	"subtitle"=>"Product Page",
+// 	"foldername"=>"gorillagrip-page",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('id','vd'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"DCG One",// title will be displayed as h1
+// 	"subtitle"=>"Internal Collateral",
+// 	"foldername"=>"dcgone-collateral",
+// 	"url"=>"",
+// 	"video"=>"",
+// 	"demo"=>"",
+// 	"hex"=>"bf3423",
+// 	"credit"=>"DCG One",
+// 	"personal"=>"",
+// 	"cover"=>"_cover.png", // if("cover"!==""){then this will be shown on thumbnails, may use gif or img}else{use "img_project_null.jpg"}
+// 	"location"=>"Seattle, WA (SoDo)", // this will be displayed above h1
+// 	"skills"=>array('wireframing','prototyping','web design','sass','responsive design','mobile first approach','indesign','photoshop cc','sublime text'),
+// 	"client"=>array( // $info => $detail
+// 		"full_name" => "",
+// 		"company" => "",
+// 		),
+// 	"content"=>array(
+// 		"situation" => "",
+// 		"approach" => "",
+// 		"experience" => "",
+// 		),
+// 	"badge"=>array('xd','vd'),
+// 	"photos"=>array(
+// 		"",
+// 		),
+// 	"sketch"=>"",// if(!==""){then have a link to view sketch}
+// 	"category"=>'work', 
+// 	"casestudy"=> "", // if(!==""){show casestudy section}
+// 	"closing"=>"Thanks to Annie Odelle from the Creative Circle Group for finding DCG One for me. Thanks to DCG One for taking me in.",
+// 	);
+/* ————————————————————————————————————————————————————————— */
+// $array_projects[] = array(
+// 	"title"=>"American Express Pay w/ Points",// title will be displayed as h1
 // 	"subtitle"=>"UX & Visual",
 // 	"foldername"=>"amex-ux",
 // 	"url"=>"",
@@ -47,7 +239,7 @@ $array_projects = array();
 // 		"approach" => "",
 // 		"experience" => "",
 // 		),
-// 	"badge"=>array('xd','id','vd','cs'),
+// 	"badge"=>array('id','vd','cs','ur'),
 // 	"photos"=>array(
 // 		"",
 // 		),
@@ -59,8 +251,8 @@ $array_projects = array();
 /* ————————————————————————————————————————————————————————— */
 // $array_projects[] = array(
 // 	"title"=>"Steelers Nation Unite",// title will be displayed as h1
-// 	"subtitle"=>"Visual",
-// 	"foldername"=>"amex-ux",
+// 	"subtitle"=>"Achievement Icons",
+// 	"foldername"=>"snuproud",
 // 	"url"=>"",
 // 	"video"=>"",
 // 	"demo"=>"",
@@ -79,7 +271,7 @@ $array_projects = array();
 // 		"approach" => "",
 // 		"experience" => "",
 // 		),
-// 	"badge"=>array('xd','id','vd','cs'),
+// 	"badge"=>array('vd'),
 // 	"photos"=>array(
 // 		"",
 // 		),
