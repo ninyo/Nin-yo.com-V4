@@ -263,7 +263,7 @@ function header_main(){
 			// $output = $output . '<div class="logo_primary"></div>';
 			$output = $output . '<p class="header_introduce">'.$introduce.'</p>';
 			$output = $output . '<p class="header_position">'.$position.'</p>';
-			$output = $output . "<p class='header_description'>The process of helping clients build on their ideas by designing digital prototypes is something I have a lot of fun doing. The cool part about this all is being able to work alongside a team of unique and talented creatives where I get to see my work come to life for the online community to see.</p>";
+			$output = $output . "<p class='header_description'>The process of helping clients build on their ideas by designing digital prototypes is something I have a lot of fun doing. The cool part about this all is being able to work alongside a team of unique and talented creatives, where I get to see my work come to life for the online community to see.</p>";
 			// $output = $output . "<p class='header_description'>I help clients develop on their ideas by designing visual and interactive prototypes/mockups with varying fidelity. The fun part about this all is working with a creative team where I get to see the results come to life.</p>";
 			// $output = $output . "<p class='header_description'>Being able to help clients visualize ideas from research, conceptual sketches, lo/hi prototypes, and testing into an actual product are one of the reasons why I love this type of work. I wake up every single day wondering what else can I learn today?</p>";
 			// $count = 0;
