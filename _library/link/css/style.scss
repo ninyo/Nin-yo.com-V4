@@ -1,4 +1,8 @@
 //////////////////////////////////////////////////
+/* ———————————— UPDATED 2017 ———————————— */
+//////////////////////////////////////////////////
+
+//////////////////////////////////////////////////
 /* ———————————— BRAND COLORS/SETUP ———————————— */
 //////////////////////////////////////////////////
 
@@ -957,15 +961,15 @@ li.cs {background-position-x: -199px !important}
 					@include hide;
 					@include use_fira;
 					@include vp('border-radius','2px');
-					@include vp('transition','.5s');
+					@include vp('transition','.25s');
 					font-style:italic;
-					width:180px;
+					width:100px;
 					margin:0 auto;
 					position:absolute;
 					font-size:12px;
 					color:white;
 					background-color:$color_black;
-					left:-77px;
+					left:-37px;
 					top:50px;
 					}
 				}
